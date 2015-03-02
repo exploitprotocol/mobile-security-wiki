@@ -85,7 +85,7 @@ phones from LG, Samsung, Sanyo and other manufacturers.
 
 * [smali](https://code.google.com/p/smali/) - An assembler/disassembler for Android's dex format
 
-##Hooking and Instrumentation Tools
+##Hooking Tools
 
 * [ADBI Framework](https://github.com/crmulliner/ddi) - Simple and easy to use toolkit for dynamic instrumentation of Dalvik code.
 
@@ -122,7 +122,7 @@ Mobile security testing live environment
 
 * [Santoku Linux](https://santoku-linux.com/) - Santoku Linux is a virtual machine developed by NowSecure Mobile.
 
-##Android Vulnerable Apps/Challenges
+##Android Vulnerable Apps
 
 * [Android Challenges of Various Conferences/Events](https://drive.google.com/folderview?id=0B7rtSe_PH_fTWDQ0RC1DeWVoVUE&usp=sharing)
 
@@ -145,7 +145,7 @@ Mobile security testing live environment
 * [Introduction to ARM](http://opensecuritytraining.info/IntroARM.html)
 
 
-##Android Vulnerability/Exploit List
+##Android Vulnerability List
 
 * [Android Vulnerability/Exploit List](https://docs.google.com/spreadsheet/pub?key=0Am5hHW4ATym7dGhFU1A4X2lqbUJtRm1QSWNRc3E0UlE&single=true&gid=0&output=html)
 
