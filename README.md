@@ -181,14 +181,11 @@ Mobile security testing live environment
 * [Secure Preferences](https://github.com/scottyab/secure-preferences) - Android Shared preference wrapper than encrypts the keys and values of Shared Preferences.
 
 * [Trusted Intents](https://github.com/guardianproject/TrustedIntents) - Library for flexible trusted interactions between Android apps
-##Official Documents
-
-* [Android Security Overview](http://source.android.com/devices/tech/security/)
-* [Android Security Tips for Developers](http://developer.android.com/training/articles/security-tips.html)
-
 
 ##Best Practices
 
+* [Android Security Overview](http://source.android.com/devices/tech/security/)
+* [Android Security Tips for Developers](http://developer.android.com/training/articles/security-tips.html)
 * [Projects/OWASP Mobile Security Project - Top Ten Mobile Controls](https://www.owasp.org/index.php/Projects/OWASP_Mobile_Security_Project_-_Top_Ten_Mobile_Controls)
 * [PCI Mobile Payment Acceptance
 Security Guidelines for Developers](https://www.pcisecuritystandards.org/documents/Mobile%20Payment%20Security%20Guidelines%20v1%200.pdf)
