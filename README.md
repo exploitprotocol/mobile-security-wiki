@@ -260,4 +260,4 @@ It is awesome that want to contribute in this wiki, which would directly help th
 
 * Create a pull request to [Android Security Wiki Repository](https://github.com/exploitprotocol/android-security-wiki) master branch.
 
-Please let me know if you have any suggestion's
+Please let me know if you have any suggestions
