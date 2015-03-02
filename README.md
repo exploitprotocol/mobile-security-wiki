@@ -252,7 +252,7 @@ Applications](http://www.csc.ncsu.edu/faculty/jiang/pubs/CODASPY13.pdf)
 
 
 ##Contribute
-It is awesome that want to contribute in this wiki, which would directly help the community. Project/Tools which are no longer manintained are not included in this wiki. Please follow one of the ways from below to include tool or resource in this wiki-
+It is awesome to see that you want to contribute in this wiki, which would directly help the community. Project/Tools which are no longer maintained are not included in this wiki. Please follow one of the ways from below to include tool or resource in this wiki-
 
 * Tweet the resource to [@exploitprotocol](https://twitter.com/exploitprotocol)
 
