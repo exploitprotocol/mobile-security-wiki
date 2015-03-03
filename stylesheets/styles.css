@@ -822,6 +822,7 @@ nav {
   left: 50%;
   margin-left: -580px;
   text-align: right;
+  margin-top: -30px;
 }
 nav ul {
   list-style: none;
