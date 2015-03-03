@@ -81,6 +81,8 @@ phones from LG, Samsung, Sanyo and other manufacturers.
 
 * [JD-Gui](http://jd.benow.ca/) - Yet another fast Java Decompiler
 
+* [JEB](https://www.pnfsoftware.com/index) - The Interactive Android Decompiler
+
 * [Simplify](https://github.com/CalebFenton/simplify) - Generic Android Deobfuscator
 
 * [smali](https://code.google.com/p/smali/) - An assembler/disassembler for Android's dex format
