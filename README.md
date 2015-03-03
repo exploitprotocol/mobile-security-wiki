@@ -149,6 +149,7 @@ Mobile security testing live environment
 
 * [Android Vulnerability/Exploit List](https://docs.google.com/spreadsheet/pub?key=0Am5hHW4ATym7dGhFU1A4X2lqbUJtRm1QSWNRc3E0UlE&single=true&gid=0&output=html)
 
+* [Android CVE Details](http://www.cvedetails.com/vulnerability-list/vendor_id-1224/product_id-19997/Google-Android.html)
 
 ##Android Security Libraries
 
@@ -223,6 +224,7 @@ Security Guidelines for Developers](https://www.pcisecuritystandards.org/documen
 * [Evaluations of Security Solutions for Android Systems](http://arxiv.org/ftp/arxiv/papers/1502/1502.04870.pdf)
 * [Why Eve and Mallory Love Android:
 An Analysis of Android SSL (In)Security](http://www2.dcsec.uni-hannover.de/files/android/p50-fahl.pdf)
+* 
 * [The Impact of Vendor Customizations on Android Security](https://www.cs.ncsu.edu/faculty/jiang/pubs/CCS13.pdf)
 * [The Peril of Fragmentation: Security Hazards in
 Android Device Driver Customizations](http://www.cs.indiana.edu/~zhou/files/sp14_zhou.pdf)
