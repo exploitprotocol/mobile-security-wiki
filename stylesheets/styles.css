@@ -822,7 +822,7 @@ nav {
   left: 50%;
   margin-left: -610px;
   text-align: right;
-  margin-top: -32px;
+  margin-top: -30px;
 }
 nav ul {
   list-style: none;
@@ -832,7 +832,7 @@ nav ul {
 }
 nav ul li {
   padding: 5px 0px;
-  line-height: 16px;
+  line-height: 12px;
 }
 nav ul li.tag-h1 {
   font-size: 1.2em;
