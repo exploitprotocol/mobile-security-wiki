@@ -816,13 +816,13 @@ small {
 }
 
 nav {
-  width: 230px;
+  width: 270px;
   position: fixed;
   top: 220px;
   left: 50%;
-  margin-left: -580px;
+  margin-left: -610px;
   text-align: right;
-  margin-top: -30px;
+  margin-top: -32px;
 }
 nav ul {
   list-style: none;
