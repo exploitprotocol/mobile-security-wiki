@@ -27,6 +27,12 @@ phones from LG, Samsung, Sanyo and other manufacturers.
     * Android SDK tools
     * Android 5.0 (Lollipop) Platform
     * Android 5.0 emulator system image with Google APIs
+	
+* [Native Android Runtime Emulation](https://bitbucket.org/jigsaw_echo/armexec) - A native Android emulator featuring the following functions:
+	* Full stack support for ELF built by Android NDK.
+	* Seeminglessly native gdb support.
+	* Link and load shared library.
+	* Open to extension of different architecture and C runtime. 
 
 * [Root Tools](https://github.com/Stericson/RootTools) - RootTools provides rooted developers a standardized set of tools for use in the development of rooted applications.
 
@@ -72,6 +78,8 @@ phones from LG, Samsung, Sanyo and other manufacturers.
 * [AndBug](https://github.com/swdunlop/AndBug) - Android Debugging Library
 
 * [ApkTool](https://code.google.com/p/android-apktool/) - A tool for reverse engineering Android Apk Files
+
+* [APK Studio](https://apkstudio.codeplex.com/) - APK Studio is an IDE for decompiling/editing & then recompiling of android application binaries.
 
 * [Bytecode-Viewer](https://github.com/Konloch/bytecode-viewer) - A Java 8 Jar & Android APK Reverse Engineering Suite (Decompiler, Editor, Debugger & More)
 
@@ -256,6 +264,7 @@ Control Flow Transitions through the Android Framework](http://yinzhicao.org/Edg
 * [Systematic Detection of Capability Leaks in Stock Android Smartphones](http://www.csc.ncsu.edu/faculty/jiang/pubs/NDSS12_WOODPECKER.pdf)
 * [Fast, Scalable Detection of “Piggybacked” Mobile
 Applications](http://www.csc.ncsu.edu/faculty/jiang/pubs/CODASPY13.pdf)
+* [Leaving our ZIP undone: how to abuse ZIP to deliver malware apps](https://www.virusbtn.com/pdf/conference/vb2014/VB2014-Panakkal.pdf)
 
 
 ##Contribute
