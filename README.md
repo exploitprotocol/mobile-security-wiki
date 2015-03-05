@@ -65,6 +65,8 @@ phones from LG, Samsung, Sanyo and other manufacturers.
 
 * [Androguard](https://github.com/androguard/androguard) - Reverse engineering, Malware and goodware analysis of Android applications ... and more (ninja !)
 
+* [Android APK Decompiler](http://www.decompileandroid.com/) - Decompiling APK files made easy. Online decompiler.
+
 * [Android loadble Kernel Modules](https://github.com/strazzere/android-lkms) - It is mostly used for reversing and debugging on controlled systems/emulators.
 
 * [AndBug](https://github.com/swdunlop/AndBug) - Android Debugging Library
@@ -96,6 +98,8 @@ phones from LG, Samsung, Sanyo and other manufacturers.
 * [Xposed Framework](http://forum.xda-developers.com/xposed/xposed-installer-versions-changelog-t2714053) - Xposed framework enables you to modify the system or application aspect and behaviour at runtime, without modifying any Android application package(APK) or re-flashing.
 
 ##Online Analyzers
+
+* [Android Sandbox](http://androidsandbox.net/index.html) - Android Sandbox is a service that allows the dynamic and static analysis of mobile applications.
 
 * [AndroidTotal](http://andrototal.org/) - AndroTotal is a free service to scan suspicious APKs against multiple mobile antivirus apps.
 
@@ -133,6 +137,8 @@ Mobile security testing live environment
 * [ExploitMe labs by SecurityCompass](http://securitycompass.github.io/AndroidLabs/setup.html)
 
 ##Android Malwares Database
+
+* [Android Sandbox Samples](http://androidsandbox.net/samples/) - Index of Android Sandbox Samples listing many APKs.
 
 * [Contagio Mini Dump](http://contagiominidump.blogspot.com/) - Contagio mobile mini-dump offers an upload dropbox for you to share your mobile malware samples.
 
