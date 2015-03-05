@@ -27,6 +27,12 @@ phones from LG, Samsung, Sanyo and other manufacturers.
     * Android SDK tools
     * Android 5.0 (Lollipop) Platform
     * Android 5.0 emulator system image with Google APIs
+	
+* [Native Android Runtime Emulation](https://bitbucket.org/jigsaw_echo/armexec) - A native Android emulator featuring the following functions:
+	* Full stack support for ELF built by Android NDK.
+	* Seeminglessly native gdb support.
+	* Link and load shared library.
+	* Open to extension of different architecture and C runtime. 
 
 * [Root Tools](https://github.com/Stericson/RootTools) - RootTools provides rooted developers a standardized set of tools for use in the development of rooted applications.
 
