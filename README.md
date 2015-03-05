@@ -79,6 +79,8 @@ phones from LG, Samsung, Sanyo and other manufacturers.
 
 * [ApkTool](https://code.google.com/p/android-apktool/) - A tool for reverse engineering Android Apk Files
 
+* [APK Studio](https://apkstudio.codeplex.com/) - APK Studio is an IDE for decompiling/editing & then recompiling of android application binaries.
+
 * [Bytecode-Viewer](https://github.com/Konloch/bytecode-viewer) - A Java 8 Jar & Android APK Reverse Engineering Suite (Decompiler, Editor, Debugger & More)
 
 * [Dex2Jar](https://code.google.com/p/dex2jar/) - Tools to work with android .dex and java .class files
