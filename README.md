@@ -256,6 +256,7 @@ Control Flow Transitions through the Android Framework](http://yinzhicao.org/Edg
 * [Systematic Detection of Capability Leaks in Stock Android Smartphones](http://www.csc.ncsu.edu/faculty/jiang/pubs/NDSS12_WOODPECKER.pdf)
 * [Fast, Scalable Detection of “Piggybacked” Mobile
 Applications](http://www.csc.ncsu.edu/faculty/jiang/pubs/CODASPY13.pdf)
+* [Leaving our ZIP undone: how to abuse ZIP to deliver malware apps](https://www.virusbtn.com/pdf/conference/vb2014/VB2014-Panakkal.pdf)
 
 
 ##Contribute
