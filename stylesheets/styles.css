@@ -1,3 +1,6 @@
+/* Anchor are offset to be right under the header */
+a.anchor{display: block; position: relative; top: -175px; visibility: hidden;}
+
 /*
 Leap Day for GitHub Pages
 by Matt Graham
