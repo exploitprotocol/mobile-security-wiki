@@ -16,7 +16,9 @@ $(document).ready(function(){
   
   nav_tag_link('android');
   nav_tag_link('ios');
+  nav_tag_link('windows');
   document.getElementById("ios").style.display="none";
+  document.getElementById("windows").style.display="none";
   sectionHeight();
   
   $('img').load(sectionHeight);
@@ -61,7 +63,19 @@ $("#"+type+" section h1,#"+type+" section h2").each(function(){
   function display_section(type){
      document.getElementById(type).style.display="block";
      if(type=='ios')
-     document.getElementById('android').style.display="none";
+     {
+      document.getElementById('android').style.display="none";
+      document.getElementById('windows').style.display="none";
+     }
+     else
+     if (type=='android') 
+      {
+        document.getElementById('ios').style.display="none";
+        document.getElementById('windows').style.display="none";
+      }
     else
+    {
       document.getElementById('ios').style.display="none";
-}
+      document.getElementById('android').style.display="none";
+    }
+  }
