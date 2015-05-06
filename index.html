@@ -1,921 +1,1225 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Android Security Wiki</title>
-    <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
-    <link rel="stylesheet" href="stylesheets/octicons.css">
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="chrome=1">
+      <title>Mobile Security Wiki</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+      <link rel="stylesheet" href="stylesheets/octicons.css">
+      <link rel="stylesheet" href="stylesheets/styles.css">
+      <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+      <script src="javascripts/main.js"></script>
+      <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link href="favicon.ico" rel="shortcut icon">
-  </head>
-  <body>
-
+      <![endif]-->
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+      <link href="favicon.ico" rel="shortcut icon">
+   </head>
+   <body>
       <header>
-        <h1><i class="fa fa-android"></i> Android Security Wiki</h1>
-        <p>One Stop for Android Security Resources</p>
+         <h1><span class="fa fa-mobile" title="Mobile Security Wiki" style="cursor:pointer;"></span> Mobile Security Wiki</h1>
+         <p>One Stop for Mobile Security Resources</p>
       </header>
-
       <div id="banner">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/exploitprotocol/android-security-wiki/commits/gh-pages.atom" target="_blank" class="button">Subscribe Via RSS</a>&nbsp;<a href="#contribute" class="button">Contribute</a>&nbsp;<a href="https://manifestsecurity.com" class="button" target="_blank">A ManifestSecurity.com Initiative</a>
-        <a class="twitter-share-button" href="https://twitter.com/share" data-url="https://androidsecuritywiki.com" data-via="exploitprotocol" data-text="Android Security Wiki - One Stop for Android Security Resources" data-count="horizontal">Tweet</a>
-        
+         <span id="space_section">&nbsp;&nbsp;<a href="https://github.com/exploitprotocol/mobile-security-wiki/commits/gh-pages.atom" target="_blank" style="
+    position: absolute;margin-left: -35px;   
+    padding-top: 8px;
+"><img src="https://i.imgur.com/jDUfFGH.png"></a></span><a href="#contribute" class="button">Contribute</a><a href="https://manifestsecurity.com" class="button" target="_blank">A ManifestSecurity.com Initiative</a>
+         <a class="twitter-share-button" href="https://twitter.com/share" data-url="https://mobilesecuritywiki.com" data-via="exploitprotocol" data-text="Mobile Security Wiki - One Stop for Mobile Security Resources" data-count="none">Tweet</a>
+      </div>
 
-      </div><!-- end banner -->
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <p>Please use left sidebar to navigate between sections.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Updated on: <strong>12-April-2015</strong></p>
+      <!-- end banner -->
+      <div class="wrapper" id="android">
+         <nav>
+            <ul></ul>
+         </nav>
+         <section>
+            <p><span style="cursor:pointer;" title="Android" class="fa fa-android fa-3x" onclick="display_section('android')"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="cursor:pointer;" title="iOS" class="fa fa-apple fa-3x" onclick="display_section('ios')"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="cursor:pointer;" title="Windows App" class="fa fa-windows fa-3x" onclick="display_section('windows')"></span></p>
+            <p>Please click on above icons to navigate between Wikis.</p>
+            <p>Please use left sidebar to navigate between sections.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Updated on: <strong>4-May-2015</strong></p>
+            <a id="forensics-tools" class="anchor" href="#forensics-tools" aria-hidden="true" style="display:block"></a>
+            <h2><i class="fa fa-folder"></i> Forensics Tools <a href="#forensics-tools"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li>
+                  <p><a href="https://github.com/viaforensics/android-forensics" target="_blank">Android Forensics</a> - Open Source Android Forensics App and Framework</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/mspreitz/ADEL" target="_blank">Android Data Extractor Lite</a></p>
+               </li>
+               <li>
+                  <p><a href="http://www.bitpim.org/" target="_blank">BitPim</a> - BitPim is a program that allows you to view and manipulate data on many CDMA 
+                     phones from LG, Samsung, Sanyo and other manufacturers.
+                  </p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/504ensicsLabs/LiME" target="_blank">LiME</a> - LiME (formerly DMD) is a Loadable Kernel Module (LKM), which allows the acquisition of volatile memory from Linux and Linux-based devices, such as those powered by Android.</p>
+               </li>
+               <li>
+                  <p><a href="http://www.osaf-community.org/" target="_blank">Open Source Android Forensics</a></p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/kosborn/p2p-adb/" target="_blank">P2P-ADB</a> - Phone to Phone Android Debug Bridge - A project for "debugging" phones from other phones.</p>
+               </li>
+               <li>
+                  <p><a href="https://www.isecpartners.com/tools/mobile-security/pysimreader.aspx" target="_blank">pySimReader</a> - It allows users to write out arbitrary raw SMS PDUs to a SIM card.</p>
+               </li>
+            </ul>
+            <a id="development-tools" class="anchor" href="#development-tools" aria-hidden="true"></a>
+            <h2><i class="fa fa-code"></i> Development Tools <a href="#development-tools"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li>
+                  <p><a href="https://developer.android.com/sdk/index.html" target="_blank">Android SDK</a> - The Android software development kit (SDK) includes a comprehensive set of development tools. These include a debugger, libraries, a handset emulator based on QEMU, documentation, sample code, and tutorials.</p>
+               </li>
+               <li>
+                  <p><a href="https://developer.android.com/tools/sdk/ndk/index.html" target="_blank">Android NDK</a> - The NDK is a toolset that allows you to implement parts of your app using native-code languages such as C and C++.</p>
+               </li>
+               <li>
+                  <p><a href="https://developer.android.com/sdk/index.html" target="_blank">ADT Bundle</a> -  The Android Developer Tools(ADT) bundle is a single download that contains everything for developers to start creating Android Application</p>
+                  <ul>
+                     <li>Android Studio IDE or Eclipse IDE</li>
+                     <li>Android SDK tools</li>
+                     <li>Android 5.0 (Lollipop) Platform</li>
+                     <li>Android 5.0 emulator system image with Google APIs</li>
+                  </ul>
+               </li>
+               <li>
+                  <p><a href="https://bitbucket.org/jigsaw_echo/armexec" target="_blank">Native Android Runtime Emulation</a> - A native Android emulator featuring the following functions:</p>
+                  <ul>
+                     <li>Full stack support for ELF built by Android NDK.</li>
+                     <li>Seeminglessly native gdb support.</li>
+                     <li>Link and load shared library.</li>
+                     <li>Open to extension of different architecture and C runtime. </li>
+                  </ul>
+               </li>
+               <li>
+                  <p><a href="https://github.com/Stericson/RootTools" target="_blank">Root Tools</a> - RootTools provides rooted developers a standardized set of tools for use in the development of rooted applications.</p>
+               </li>
+            </ul>
+            <a id="static-analysis-tools" class="anchor" href="#static-analysis-tools" aria-hidden="true"></a>
+            <h2><i class="fa fa-search"></i> Static Analysis Tools <a href="#static-analysis-tools"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li>
+                  <p><a href="https://github.com/maaaaz/androwarn/">Androwarn</a>:- Yet another static code analyzer for malicious Android applications</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/sonyxperiadev/ApkAnalyser" target="_blank">ApkAnalyser</a> - ApkAnalyser is a static, virtual analysis tool for examining and validating the development work of your Android app.</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/honeynet/apkinspector/" target="_blank">APKInspector</a> - APKinspector is a powerful GUI tool for analysts to analyze the Android applications.</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/google/error-prone" target="_blank">Error-Prone</a> - Catch common Java mistakes as compile-time errors</p>
+               </li>
+               <li>
+                  <p><a href="http://findbugs.sourceforge.net/" target="_blank">FindBugs</a> + <a href="http://h3xstream.github.io/find-sec-bugs/" target="_blank">FindSecurityBugs</a> - FindSecurityBugs is a extension for FindBugs which include security rules for Java applications. It will find cryptography problems as well as Android specific problems.</p>
+               </li>
+               <li>
+                  <p><a href="http://sseblog.ec-spride.de/tools/flowdroid/" target="_blank">FlowDroid</a> - FlowDroid is a context-, flow-, field-, object-sensitive and lifecycle-aware static taint analysis tool for Android applications.</p>
+               </li>
+               <li>
+                  <p><a href="http://developer.android.com/tools/help/lint.html" target="_blank">Lint</a> - The Android lint tool is a static code analysis tool that checks your Android project source files for potential bugs and optimization improvements for correctness, security, performance, usability, accessibility, and internationalization.</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/EugenioDelfa/Smali-CFGs" target="_blank">Smali CFGs</a> - Smali Control Flow Graph's</p>
+               </li>
+               <li>
+                  <p><a href="https://code.google.com/p/smali/" target="_blank">Smali and Baksmali</a> - smali/baksmali is an assembler/disassembler for the dex format used by dalvik, Android's Java VM implementation.</p>
+               </li>
+               <li>
+                  <p><a href="http://pl.cs.colorado.edu/projects/thresher/" target="_blank">Thresher</a> - Thresher is a static analysis tool that specializes in checking heap reachability properties. Its secret sauce is using a coarse up-front points-to analysis to focus a precise symbolic analysis on the alarms reported by the points-to analysis.</p>
+               </li>
+            </ul>
+            <a id="dynamic-analysis-tools" class="anchor" href="#dynamic-analysis-tools" aria-hidden="true"></a>
+            <h2><i class="fa fa-cogs"></i> Dynamic Analysis Tools <a href="#dynamic-analysis-tools"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li>
+                  <p><a href="https://github.com/AndroidHooker/hooker" target="_blank">Android Hooker</a> - This project provides various tools and applications that can be use to automaticaly intercept and modify any API calls made by a targeted application.</p>
+               </li>
+               <li>
+                  <p><a href="https://code.google.com/p/droidbox/" target="_blank">Droidbox</a> - DroidBox is developed to offer dynamic analysis of Android applications</p>
+               </li>
+               <li>
+                  <p><a href="https://www.mwrinfosecurity.com/products/drozer/" target="_blank">Drozer</a> - Drozer allows you to search for security vulnerabilities in apps and devices by assuming the role of an app and interacting with the Dalvik VM, other apps' IPC endpoints and the underlying OS.</p>
+               </li>
+               <li>
+                  <p><a href="http://forum.xda-developers.com/xposed/xposed-installer-versions-changelog-t2714053" target="_blank">Xposed Framework</a></p>
+               </li>
+            </ul>
+            <a id="reverse-engineering-tools" class="anchor" href="#reverse-engineering-tools" aria-hidden="true"></a>
+            <h2><i class="fa fa-backward"></i> Reverse Engineering Tools <a href="#reverse-engineering-tools"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li>
+                  <p><a href="https://github.com/androguard/androguard" target="_blank">Androguard</a> - Reverse engineering, Malware and goodware analysis of Android applications ... and more (ninja !)</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/strazzere/android-lkms" target="_blank">Android loadble Kernel Modules</a> - It is mostly used for reversing and debugging on controlled systems/emulators.</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/swdunlop/AndBug" target="_blank">AndBug</a> - Android Debugging Library</p>
+               </li>
+               <li>
+                  <p><a href="https://code.google.com/p/android-apktool/" target="_blank">ApkTool</a> - A tool for reverse engineering Android Apk Files</p>
+               </li>
+               <li>
+                  <p><a href="https://apkstudio.codeplex.com/" target="_blank">APK Studio</a> - APK Studio is an IDE for decompiling/editing & then recompiling of android application binaries.</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/Konloch/bytecode-viewer" target="_blank">Bytecode-Viewer</a> - A Java 8 Jar &amp; Android APK Reverse Engineering Suite (Decompiler, Editor, Debugger &amp; More)</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/mariokmk/dedex" target="_blank">dedex</a> - A command line tool for disassembling Android DEX files.</p>
+               </li>
+               <li>
+                  <p><a href="https://code.google.com/p/dex2jar/" target="_blank">Dex2Jar</a> - Tools to work with android .dex and java .class files</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/mariokmk/dexdisassembler" target="_blank">dexdisassembler</a> - A GTK tool for disassembling Android DEX files.</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/fesh0r/fernflower" target="_blank">Fern Flower</a> - FernFlower Java decompiler</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/sysdream/fino" target="_blank">Fino</a> - Android small footprint inspection tool</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/iSECPartners/Introspy-Android" target="_blank">Introspy-Android</a> - Blackbox tool to help understand what an Android application is doing at runtime and assist in the identification of potential security issues.</p>
+               </li>
+               <li>
+                  <p><a href="http://jd.benow.ca/" target="_blank">JD-Gui</a> - Yet another fast Java Decompiler</p>
+               </li>
+               <li>
+                  <p><a href="https://www.pnfsoftware.com/index" target="_blank">JEB</a> - The Interactive Android Decompiler</p>
+               </li>
+               <li>
+                  <p><a href="https://code.google.com/p/smali/" target="_blank">smali</a> - An assembler/disassembler for Android's dex format</p>
+               </li>
+            </ul>
+            <a id="hooking-tools" class="anchor" href="#hooking-tools" aria-hidden="true"></a>
+            <h2><i class="fa fa-indent"></i> Hooking Tools <a href="#hooking-tools"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li>
+                  <p><a href="https://github.com/crmulliner/ddi" target="_blank">ADBI Framework</a> - Simple and easy to use toolkit for dynamic instrumentation of Dalvik code.</p>
+               </li>
+               <li>
+                  <p><a href="http://www.cydiasubstrate.com/" target="_blank">Cydia Substrate</a> - Cydia Substrate for Android enables developers to make changes to existing software with Substrate extensions that are injected in to the target process's memory.</p>
+               </li>
+               <li>
+                  <p><a href="http://forum.xda-developers.com/xposed/xposed-installer-versions-changelog-t2714053" target="_blank">Xposed Framework</a> - Xposed framework enables you to modify the system or application aspect and behaviour at runtime, without modifying any Android application package(APK) or re-flashing.</p>
+               </li>
+               <li>
+                  <p><a href="http://www.frida.re/" target="_blank">Frida</a> - Inject JavaScript to explore native apps on Android</p>
+               </li>
+            </ul>
+            <a id="obfuscator-tools" class="anchor" href="#obfuscator-tools" aria-hidden="true"></a>
+            <h2><i class="fa fa-unlock-alt"></i> Obfuscators & Deobfuscators Tools <a href="#obfuscator-tools"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li>
+                  <p><a href="https://github.com/strazzere/APKfuscator" target="_blank">APK Obfuscator</a> - A generic DEX file obfuscator and munger.</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/Konloch/bytecode-viewer" target="_blank">Bytecode-Viewer</a> - A Java 8 Jar & Android APK Reverse Engineering Suite (Decompiler, Editor, Debugger & More)</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/HamiltonianCycle/ClassNameDeobfuscator" target="_blank">Class Name Deobfuscator</a> - Simple script to parse through the .smali files produced by apktool and extract the .source annotation lines.</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/thuxnder/dalvik-obfuscator" target="_blank">Dalvik Obfuscator</a> - A set of tools/scripts to obfuscate and manipulate dex files</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/CalebFenton/simplify" target="_blank">Simplify</a> - Generic Android Deobfuscator</p>
+               </li>
+            </ul>
+            <a id="online-analyzers" class="anchor" href="#online-analyzers" aria-hidden="true"></a>
+            <h2><i class="fa fa-globe"></i> Online Analyzers <a href="#online-analyzers"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li>
+                  <p><a href="https://androidobservatory.org/" target="_blank">Android Observatory</a> - The Android Observatory is a web interface to a large repository of Android applications. It allows users to search or browse through thousands of Android apps and retrieve metadata for those apps. </p>
+               </li>
+               <li>
+                  <p><a href="http://www.decompileandroid.com/" target="_blank">Android APK Decompiler</a> - Decompiling APK files made easy. Online decompiler.</p>
+               </li>
+               <li>
+                  <p><a href="http://andrototal.org/" target="_blank">AndroidTotal</a> - AndroTotal is a free service to scan suspicious APKs against multiple mobile antivirus apps.</p>
+               </li>
+               <li>
+                  <p><a href="http://anubis.iseclab.org/" target="_blank">Anubis</a> - Malware Analysis for Unknown Binaries.</p>
+               </li>
+               <li>
+                  <p><a href="http://www.mobiseclab.org/akana/Intro.html" target="_blank">Akana</a> - Akana is an online Android app Interactive Analysis Enviroment (IAE), which is combined with some plugins for checking the malicious app.</p>
+               </li>
+               <li>
+                  <p><a href="http://www.app360scan.com/" target="_blank">App360Scan</a> - Tells about permissons used by an Application and what harm it can cause to users.</p>
+               </li>
+               <li>
+                  <p><a href="http://copperdroid.isg.rhul.ac.uk/copperdroid/" target="_blank">CopperDroid</a> - It automatically perform out-of-the-box dynamic behavioral analysis of Android malware.</p>
+               </li>
+               <li>
+                  <p><a href="https://dexter.bluebox.com/" target="_blank">Dexter</a> - Dexter is an interactive Android software analysis environment with collaboration features.</p>
+               </li>
+               <li>
+                  <p><a href="http://www.mobiseclab.org/eacus.jsp" target="_blank">Eacus</a> - A lite Android app analysis framework</p>
+               </li>
+               <li>
+                  <p><a href="http://mobilesandbox.org/" target="_blank">Mobile Sandbox</a> - The Mobile-Sandbox provides static and dynamic malware analysis combined with machine learning techniques for Android applications. </p>
+               </li>
+               <li>
+                  <p><a href="http://sanddroid.xjtu.edu.cn/#overview" target="_blank">Sandroid</a> -  An automatic Android application analysis system</p>
+               </li>
+               <li>
+                  <p><a href="https://www.virustotal.com/" target="_blank">Virus Total</a> - VirusTotal is a free service that analyzes suspicious files and URLs and facilitates the quick detection of viruses, worms, trojans, and all kinds of malware.</p>
+               </li>
+            </ul>
+            <a id="android-testing-distributions" class="anchor" href="#android-testing-distributions" aria-hidden="true"></a>
+            <h2><i class="fa fa-rocket"></i> Android Testing Distributions <a href="#android-testing-distributions"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li>
+                  <p><a href="https://manifestsecurity.com/appie" target="_blank">Appie</a> - A portable software package for Android Pentesting and an awesome alternative to existing Virtual machines.It is a one stop answer for all the tools needed in Android Application Security Assessment, Android Forensics, Android Malware Analysis.</p>
+               </li>
+               <li>
+                  <p><a href="https://androidtamer.com" target="_blank">Android Tamer</a> - Android Tamer is a Virtual / Live Platform for Android Security professionals.</p>
+               </li>
+               <li>
+                  <p><a href="https://appsec-labs.com/AppUse/" target="_blank">AppUse</a> - AppUse is a VM (Virtual Machine) developed by AppSec Labs.</p>
+               </li>
+               <li>
+                  <p><a href="http://sourceforge.net/projects/mobisec/" target="_blank">Mobisec</a> - 
+                     Mobile security testing live environment
+                  </p>
+               </li>
+               <li>
+                  <p><a href="https://www.nowsecure.com/apptesting/community/#viaprotect" target="_blank">Now Secure App Testing Suite:Community Edition</a></p>
+               </li>
+               <li>
+                  <p><a href="https://santoku-linux.com/">Santoku Linux</a> - Santoku Linux is a virtual machine developed by NowSecure Mobile.</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/oguzhantopgul/Vezir-Project" target="_blank">Vezir Project</a> - Yet Another Linux Virtual Machine for Mobile Application Pentesting and Mobile Malware Analysis.</p>
+               </li>
+            </ul>
+            <a id="android-vulnerable-apps" class="anchor" href="#android-vulnerable-apps" aria-hidden="true"></a>
+            <h2><i class="fa fa-bug"></i> Android Vulnerable Apps <a href="#android-vulnerable-apps"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li>
+                  <p><a href="https://drive.google.com/folderview?id=0B7rtSe_PH_fTWDQ0RC1DeWVoVUE&amp;usp=sharing" target="_blank">Android Challenges of Various Conferences/Events</a></p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/jackMannino/OWASP-GoatDroid-Project" target="_blank">Owasp Goatdroid Project</a></p>
+               </li>
+               <li>
+                  <p><a href="http://securitycompass.github.io/AndroidLabs/setup.html" target="_blank">ExploitMe labs by SecurityCompass</a></p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/dineshshetty/Android-InsecureBankv2" target="_blank">InsecureBank V2</a></p>
+               </li>
+               <li>
+                  <p><a href="https://labs.mwrinfosecurity.com/system/assets/380/original/sieve.apk" target="_blank">Sieve</a>- Sieve is a password manager app, riddled with security vulnerabilities.</p>
+               </li>
+            </ul>
+            <a id="android-security-apps" class="anchor" href="#android-security-apps" aria-hidden="true"></a>
+            <h2><i class="fa fa-user-secret"></i> Android Security Apps <a href="#android-security-apps"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li>
+                  <p><a href="https://github.com/SecUpwN/Android-IMSI-Catcher-Detector" target="_blank">Android IMSI-Catcher-Detector</a> - It is an app to detect IMSI-Catchers. IMSI-Catchers are false mobile towers (base stations) acting between the target mobile phone(s) and the real towers of service providers. As such they are considered a Man-In-The-Middle (MITM) attack. In the USA the IMSI-Catcher technology is known under the name "StingRay".</p>
+               </li>
+               <li>
+                  <p><a href="http://delhi.securitycompass.com/" target="_blank">Am I Vulnerable</a> - AIV is an Android security app that notifies the user of publicly known vulnerabilities found in the installed version of apps on the device.</p>
+               </li>
+            </ul>
+            <a id="android-malwares-related" class="anchor" href="#android-malwares-related" aria-hidden="true"></a>
+            <h2><i class="fa fa-warning"></i> Android Malwares Related <a href="#android-malwares-related"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li>
+                  <p><a href="http://contagiominidump.blogspot.com/" target="_blank">Contagio Mini Dump</a> - Contagio mobile mini-dump offers an upload dropbox for you to share your mobile malware samples.</p>
+               </li>
+               <li>
+                  <p><a href="https://code.google.com/p/androguard/wiki/DatabaseAndroidMalwares" target="_blank">Android Malwares Databases</a> - No Longer Maintained.</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/faber03/AndroidMalwareEvaluatingTools" target="_blank">Android Malware Evaluating Tools</a> - Evaluation tools for Android Malwares</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/maldroid/maldrolyzer" target="_blank">Maldrolyzer</a> - Simple framework to extract "actionable" data from Android malware (C&Cs, phone numbers etc.)</p>
+               </li>
+            </ul>
+            <a id="tutorials" class="anchor" href="#tutorials" aria-hidden="true"></a>
+            <h2><i class="fa fa-university"></i> Tutorials <a href="#tutorials"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li>
+                  <p><a href="https://manifestsecurity.com/android-application-security/" target="_blank">Android Application Security Series</a> - A simple and elaborative series on Android Application Security. Beneficial for Android Security Professionals and Developers.</p>
+               </li>
+               <li>
+                  <p><a href="http://opensecuritytraining.info/AndroidForensics.html" target="_blank">Android Forensics Course</a></p>
+               </li>
+               <li>
+                  <p><a href="http://opensecuritytraining.info/IntroARM.html" target="_blank">Introduction to ARM</a></p>
+               </li>
+               <li><a href="http://resources.infosecinstitute.com/author/srinivas/" target="_blank">Android Security Articles By Infosec Institute</a></li>
+               <li><a href="https://mariokmk.github.io/programming/2015/03/06/learning-android-bytecode.html" target="_blank">Learning Android Bytecode</a></li>
+            </ul>
+            <a id="android-vulnerability-list" class="anchor" href="#android-vulnerability-list" aria-hidden="true"></a>
+            <h2><i class="fa fa-list"></i> Android Vulnerability List <a href="#android-vulnerability-list"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li><a href="https://docs.google.com/spreadsheet/pub?key=0Am5hHW4ATym7dGhFU1A4X2lqbUJtRm1QSWNRc3E0UlE&amp;single=true&amp;gid=0&amp;output=html" target="_blank">Android Vulnerability/Exploit List</a></li>
+               <li><a href="http://www.cvedetails.com/vulnerability-list/vendor_id-1224/product_id-19997/Google-Android.html">Android CVE Details</a></li>
+            </ul>
+            <a id="android-security-libraries" class="anchor" href="#android-security-libraries" aria-hidden="true"></a>
+            <h2><i class="fa fa-puzzle-piece"></i> Android Security Libraries <a href="#android-security-libraries"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li>
+                  <p><a href="https://github.com/zeapo/Android-Password-Store" target="_blank">Android Password Store</a></p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/moxie0/AndroidPinning" target="_blank">Android Pinning</a> - A standalone library project for certificate pinning on Android.</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/facebook/conceal" target="_blank">Conceal By Facebook</a> - Conceal provides easy Android APIs for performing fast encryption and authentication of data.</p>
+               </li>
+               <li>
+                  <p><a href="http://www.saikoa.com/dexguard" target="_blank">Dexguard</a> - DexGuard is our specialized optimizer and obfuscator for Android. Create apps that are faster, more compact, and more difficult to crack.</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/simbiose/Encryption" target="_blank">Encryption</a> - Encryption is a simple way to create encrypted strings to Android project.</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/commonsguy/cwac-security" target="_blank">CWAC-Security</a> - Helping You Help Your Users Defend Their Data</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/guardianproject/IOCipher" target="_blank">IOCipher</a> - IOCipher is a virtual encrypted disk for apps without requiring the device to be rooted.</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/tozny/java-aes-crypto" target="_blank">Java AES Crypto</a> - A simple Android class for encrypting & decrypting strings, aiming to avoid the classic mistakes that most such classes suffer from.</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/guardianproject/NetCipher" target="_blank">NetCipher</a> - This is an Android Library Project that provides multiple means to improve network security in mobile applications.</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/open-keychain/openpgp-api-lib" target="_blank">OpenPGP API</a> - The OpenPGP API provides methods to execute OpenPGP operations, such as sign, encrypt, decrypt, verify, and more without user interaction from background threads.</p>
+               </li>
+               <li>
+                  <p><a href="https://code.google.com/p/owasp-java-html-sanitizer/" target="_blank">OWASP Java HTML Sanitizer</a></p>
+               </li>
+               <li>
+                  <p><a href="http://proguard.sourceforge.net/" target="_blank">Proguard</a> - ProGuard is a free Java class file shrinker, optimizer, obfuscator, and preverifier. It detects and removes unused classes, fields, methods, and attributes.</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/rtyley/spongycastle" target="_blank">Spongy Castle</a> - a repackage of Bouncy Castle for Android</p>
+               </li>
+               <li>
+                  <p><a href="https://www.zetetic.net/sqlcipher/sqlcipher-for-android/" target="_blank">SQL Cipher</a> - SQLCipher is an open source extension to SQLite that provides transparent 256-bit AES encryption of database files.</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/scottyab/secure-preferences" target="_blank">Secure Preferences</a> - Android Shared preference wrapper than encrypts the keys and values of Shared Preferences.</p>
+               </li>
+               <li>
+                  <p><a href="https://github.com/guardianproject/TrustedIntents" target="_blank">Trusted Intents</a> - Library for flexible trusted interactions between Android apps</p>
+               </li>
+            </ul>
+            <a id="best-practices" class="anchor" href="#best-practices" aria-hidden="true"></a>
+            <h2><i class="fa fa-thumbs-up"></i> Best Practices <a href="#best-practices"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li><a href="http://source.android.com/devices/tech/security/" target="_blank">Android Security Overview</a></li>
+               <li><a href="http://developer.android.com/training/articles/security-tips.html" target="_blank">Android Security Tips for Developers</a></li>
+               <li><a href="https://www.owasp.org/index.php/Projects/OWASP_Mobile_Security_Project_-_Top_Ten_Mobile_Controls" target="_blank">Projects/OWASP Mobile Security Project - Top Ten Mobile Controls</a></li>
+               <li><a href="https://www.pcisecuritystandards.org/documents/Mobile%20Payment%20Security%20Guidelines%20v1%200.pdf" target="_blank">PCI Mobile Payment Acceptance
+                  Security Guidelines for Developers</a>
+               </li>
+               <li><a href="https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=111509535" target="_blank">Secure Coding in Android</a></li>
+            </ul>
+            <a id="books" class="anchor" href="#books" aria-hidden="true"></a>
+            <h2><i class="fa fa-book"></i> Books <a href="#books"><span class="octicon octicon-link"></span></a></h2>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Book</th>
+                     <th>Year</th>
+                     <th>Author</th>
+                     <th>Link</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Exploring Security Enhancements for Android </td>
+                     <td>2015</td>
+                     <td>William Confer, William Roberts</td>
+                     <td><a href="http://www.amazon.com/dp/1784390593/ref=cm_sw_r_tw_dp_mYx9ub048XC4Z" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>The Mobile Application Hacker's Handbook</td>
+                     <td>2015</td>
+                     <td>Dominic Chell, Tyrone Erasmus, Jon Lindsay, Shaun Colley, Ollie Whitehouse</td>
+                     <td><a href="http://www.amazon.com/The-Mobile-Application-Hackers-Handbook/dp/1118958500" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Android Hacker's Handbook</td>
+                     <td>2014</td>
+                     <td>Joshua J. Drake, Zach Lanier, Collin Mulliner, Pau Oliva, Stephen A. Ridley, Georg Wicherski</td>
+                     <td><a href="http://www.amazon.com/Android-Hackers-Handbook-Joshua-Drake/dp/111860864X" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Android Security Internals</td>
+                     <td>2014</td>
+                     <td>Nikolay Elenkov</td>
+                     <td><a href="http://www.nostarch.com/androidsecurity" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Android Malware And Analysis</td>
+                     <td>2014</td>
+                     <td>Shane Hartman, Ken Dunham, Manu Quintans, Jose Andre Morales, Tim Strazzere</td>
+                     <td><a href="http://www.amazon.com/Android-Malware-Analysis-Ken-Dunham/dp/1482252198" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Learning Pentesting for Android</td>
+                     <td>2014</td>
+                     <td>Aditya Gupta</td>
+                     <td><a href="http://www.amazon.in/Learning-Pentesting-Android-Aditya-Gupta/dp/1783288981" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Android Security Cookbook</td>
+                     <td>2013</td>
+                     <td>Keith Makan, Scott-Alexander-Brown</td>
+                     <td><a href="http://www.amazon.com/dp/1782167161/?tag=packtpubli-20" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Android Malware</td>
+                     <td>2013</td>
+                     <td>Xuxian Jiang, Yajin Zhou</td>
+                     <td><a href="http://www.amazon.com/Android-Malware-SpringerBriefs-Computer-Science/dp/1461473934/" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Android Application Security Essentials</td>
+                     <td>2013</td>
+                     <td>Pragati Rai</td>
+                     <td><a href="http://www.amazon.com/Android-Application-Security-Essentials-Pragati/dp/1849515603/" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Hacking Exposed Mobile Security Secrets &amp; Solutions</td>
+                     <td>2013</td>
+                     <td>Neil Bergman, Mike Stanfield, Jason Rouse, Joel Scrambay, Sarath Geethakumar, Swapnil Deshmukh, John Steven, Mike Price, Scott Matsumoto</td>
+                     <td><a href="http://www.amazon.com/Hacking-Exposed-Security-Secrets-Solutions/dp/0071817018/" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Android Security: Attacks and Defenses</td>
+                     <td>2013</td>
+                     <td>Anmol Misra, Abhishek Dubey</td>
+                     <td><a href="http://www.amazon.com/Android-Security-Defenses-Anmol-Misra/dp/1439896461/" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Mobile Phone Security and Forensics: A Practical Approach</td>
+                     <td>2012</td>
+                     <td>I.I. Androulidakis</td>
+                     <td><a href="http://www.amazon.com/Mobile-Phone-Security-Forensics-SpringerBriefs/dp/1461416493/" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Android Apps Security</td>
+                     <td>2012</td>
+                     <td>Sheran Gunasekera</td>
+                     <td><a href="http://www.amazon.com/Android-Apps-Security-Sheran-Gunasekera/dp/1430240628" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Decompiling Android</td>
+                     <td>2012</td>
+                     <td>Godfrey Nolan</td>
+                     <td><a href="http://www.amazon.com/Decompiling-Android-Godfrey-Nolan/dp/1430242485/" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Mobile Application Security</td>
+                     <td>2012</td>
+                     <td>Himanshu Dwivedi, Chris Clark and David Thiel</td>
+                     <td><a href="http://www.amazon.com/Mobile-Application-Security-Himanshu-Dwivedi/dp/0071633561/" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>XDA Developers' Android Hacker's Toolkit</td>
+                     <td>2012</td>
+                     <td>Jason Tyler, Will Verduzco</td>
+                     <td><a href="http://www.amazon.com/XDA-Developers-Android-Hackers-Toolkit/dp/1119951380/" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Android Forensics: Investigation, Analysis and Mobile Security for Google Android'</td>
+                     <td>2011</td>
+                     <td>Andrew Hoog</td>
+                     <td><a href="http://www.amazon.com/Android-Forensics-Investigation-Analysis-Security/dp/1597496510/" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Application Security for the Android Platform: Processes, Permissions, and Other Safeguards</td>
+                     <td>2011</td>
+                     <td>Jeff Six</td>
+                     <td><a href="http://www.amazon.com/Application-Security-Android-Platform-Permissions/dp/1449315070/" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Embedded Java Security: Security for Mobile Devices</td>
+                     <td>2010</td>
+                     <td>Mourad Debbabi, Mohamed Saleh, Chamseddine Talhi and Sami Zhioua</td>
+                     <td><a href="http://www.amazon.com/Embedded-Java-Security-Mobile-Devices/dp/1849966230/" target="_blank">Link</a></td>
+                  </tr>
+               </tbody>
+            </table>
+            <a id="android-security-research-papers" class="anchor" href="#android-security-research-papers" aria-hidden="true"></a>
+            <h2><i class="fa fa-newspaper-o"></i> Android Security Research Papers <a href="#android-security-research-papers"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li><a href="https://www.usenix.org/system/files/conference/woot14/woot14-kaplan.pdf" target="_blank">ATTACKING THE LINUX PRNG ON ANDROID</a></li>
+               <li><a href="http://www.quarkslab.com/dl/Android-OEM-applications-insecurity-and-backdoors-without-permission.pdf" target="_blank">Android OEM's applications (in)security and backdoors without permission</a></li>
+               <li><a href="http://www.cis.syr.edu/%7Ewedu/Research/paper/clipboard_attack_dimva2014.pdf" target="_blank">Attacks on Android Clipboard</a></li>
+               <li><a href="http://www.cs.rice.edu/%7Esc40/pubs/enck-sec11.pdf" target="_blank">A Study of Android Application Security</a></li>
+               <li><a href="http://www.cis.syr.edu/%7Ewedu/Research/paper/webview_acsac2011.pdf" target="_blank">Attacks on Webview in the Android System</a></li>
+               <li><a href="https://www.sba-research.org/wp-content/uploads/publications/ndss2012_final.pdf" target="_blank">Gues who's is Texting you?Evaluating Security of Smartphone Messaging Applications</a></li>
+               <li><a href="http://arxiv.org/ftp/arxiv/papers/1502/1502.04870.pdf" target="_blank">Evaluations of Security Solutions for Android Systems</a></li>
+               <li><a href="http://www2.dcsec.uni-hannover.de/files/android/p50-fahl.pdf" target="_blank">Why Eve and Mallory Love Android:
+                  An Analysis of Android SSL (In)Security</a>
+               </li>
+               <li><a href="https://www.cs.ncsu.edu/faculty/jiang/pubs/CCS13.pdf" target="_blank">The Impact of Vendor Customizations on Android Security</a></li>
+               <li><a href="http://www.cs.indiana.edu/%7Ezhou/files/sp14_zhou.pdf" target="_blank">The Peril of Fragmentation: Security Hazards in
+                  Android Device Driver Customizations</a>
+               </li>
+               <li><a href="http://www.cs.ucsb.edu/%7Echris/research/doc/ccs13_cryptolint.pdf" target="_blank">An Empirical Study of Cryptographic Misuse
+                  in Android Applications</a>
+               </li>
+               <li><a href="http://www.guanotronic.com/%7Eserge/papers/soups12-android.pdf" target="_blank">Android Permissions:User Attention, Comprehension, and Behavior</a></li>
+               <li><a href="http://www.cs.northwestern.edu/%7Eychen/Papers/AppsPlayground.pdf" target="_blank">AppsPlayground: Automatic Security Analysis of
+                  Smartphone Applications</a>
+               </li>
+               <li><a href="http://users.encs.concordia.ca/%7Eclark/papers/2012_spsm.pdf" target="_blank">Understanding and Improving App Installation Security
+                  Mechanisms through Empirical Analysis of Android</a>
+               </li>
+               <li><a href="https://www.incibe.es/extfrontinteco/img/File/intecocert/EstudiosInformes/android_malware_situation.pdf" target="_blank">Android Malware Situation</a></li>
+               <li><a href="http://arxiv.org/pdf/1502.03182v2" target="_blank">PowerSpy: Location Tracking using Mobile Device Power Analysis</a></li>
+               <li><a href="http://yinzhicao.org/EdgeMiner/2015_ndss_edgeminer.pdf" target="_blank">EdgeMiner: Automatically Detecting Implicit
+                  Control Flow Transitions through the Android Framework</a>
+               </li>
+               <li><a href="http://www.yajin.org/papers/ndss13_contentscope.pdf" target="_blank">Detecting Passive Content Leaks and Pollution in Android Applications </a></li>
+               <li><a href="http://www.yajin.org/papers/codaspy14_divilar.pdf" target="_blank">DIVILAR: Diversifying Intermediate Language for Anti-Repackaging on Android Platform </a></li>
+               <li><a href="http://www.csc.ncsu.edu/faculty/jiang/pubs/MOBISYS12.pdf" target="_blank"> RiskRanker: Scalable and Accurate Zero-day Android Malware Detection</a></li>
+               <li><a href="http://www.csc.ncsu.edu/faculty/jiang/pubs/CODASPY12.pdf" target="_blank">DroidMOSS: Detecting Repackaged Smartphone Applications in Third-Party Android Marketplaces</a></li>
+               <li><a href="http://www.yajin.org/papers/oakland12_sok.pdf" target="_blank">Dissecting Android Malware: Characterization and Evolution</a></li>
+               <li><a href="http://www.csc.ncsu.edu/faculty/jiang/pubs/NDSS12_DROIDRANGER.pdf" target="_blank">Hey, You, Get off of My Market: Detecting Malicious Apps in Official and Alternative Android Markets</a></li>
+               <li><a href="http://www.csc.ncsu.edu/faculty/jiang/pubs/NDSS12_WOODPECKER.pdf" target="_blank">Systematic Detection of Capability Leaks in Stock Android Smartphones</a></li>
+               <li><a href="http://www.csc.ncsu.edu/faculty/jiang/pubs/CODASPY13.pdf" target="_blank">Fast, Scalable Detection of “Piggybacked” Mobile
+                  Applications</a>
+               </li>
+               <li><a href="https://www.virusbtn.com/pdf/conference/vb2014/VB2014-Panakkal.pdf" target="_blank">Leaving our ZIP undone: how to abuse ZIP to deliver malware apps</a></li>
+            </ul>
+            <a id="security-overview" class="anchor" href="#security-overview" aria-hidden="true"></a>
+            <h2><i class="fa fa-key"></i> Security Overview <a href="#security-overview"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li>
+                  <a href="https://source.android.com/devices/tech/security/enhancements/enhancements50.html" target="_blank">
+                     Security Enhancements in Android 5.0
+               </li>
+               <li><a href="https://source.android.com/devices/tech/security/enhancements/enhancements44.html" target="_blank">Security Enhancements in Android 4.4</li>
+               <li><a href="https://source.android.com/devices/tech/security/enhancements/enhancements43.html" target="_blank">Security Enhancements in Android 4.3</li>
+               <li><a href="https://source.android.com/devices/tech/security/enhancements/enhancements42.html" target="_blank">Security Enhancements in Android 4.2</li>
+               <li><a href="https://source.android.com/devices/tech/security/enhancements/enhancements41.html" target="_blank">Security Enhancements in Android 1.5 through Android 4.1</li>
+               <li><a href="https://androidtamer.com/android-security-enhancements/" target="_blank">Android Security Enhancements</a></li>
+               <li><a href="http://opensecurity.in/research/security-analysis-of-android-browsers.html" target="_blank">Android Browsers Static Security Analysis</a></li>
+            </ul>
+            <a id="presentations" class="anchor" href="#presentations" aria-hidden="true"></a>
+            <h2><i class="fa fa-video-camera"></i> Presentations <a href="#presentations"><span class="octicon octicon-link"></span></a></h2>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Presentation</th>
+                     <th>Conference</th>
+                     <th>Year</th>
+                     <th>Author</th>
+                     <th>Link</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>The nightmare behind the cross platform mobile apps dream</td>
+                     <td>Blackhat Asia</td>
+                     <td>2015</td>
+                     <td>Marco Grassi, Sebastian Guerrero</td>
+                     <td><a href="https://speakerdeck.com/marcograss/the-nightmare-behind-the-cross-platform-mobile-apps-dream" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>DABid: The Powerful Interactive Android Debugger for Android Malware Analysis</td>
+                     <td>Blackhat Asia </td>
+                     <td>2015</td>
+                     <td></td>
+                     <td><a href="https://www.blackhat.com/docs/asia-15/materials/asia-15-Jung-DABiD-The-Powerful-Interactive-Android-Debugger-For-Android-Malware-Analysis.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Resurrecting The READ_LOGS Permission On Samsung Devices </td>
+                     <td>Blackhat Asia</td>
+                     <td>2015</td>
+                     <td>Ryan Johnson, Angelos Stavrou</td>
+                     <td><a href="https://www.blackhat.com/docs/asia-15/materials/asia-15-Johnson-Resurrecting-The-READ-LOGS-Permission-On-Samsung-Devices.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>We Can still Crack you</td>
+                     <td>Blackhat Asia</td>
+                     <td>2015</td>
+                     <td></td>
+                     <td><a href="https://www.blackhat.com/docs/asia-15/materials/asia-15-Park-We-Can-Still-Crack-You-General-Unpacking-Method-For-Android-Packer-No-Root.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Relaying contactless EMV transactions with off-the-self hardware</td>
+                     <td>Blackhat Asia</td>
+                     <td>2015</td>
+                     <td></td>
+                     <td><a href="https://www.blackhat.com/docs/asia-15/materials/asia-15-VandenBreekel-Relaying-EMV-Contactless-Transactions-Using-Off-The-Shelf-Android-Devices.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Hiding behind ART</td>
+                     <td>Blackhat Asia</td>
+                     <td>2015</td>
+                     <td>Paul Sebanal</td>
+                     <td><a href="https://www.blackhat.com/docs/asia-15/materials/asia-15-Sabanal-Hiding-Behind-ART-wp.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Watch you lookin’ at? </td>
+                     <td>Securi-Tay</td>
+                     <td>2015</td>
+                     <td>Jahmel Harris & Owen Evans</td>
+                     <td><a href="https://labs.mwrinfosecurity.com/system/assets/886/original/WatchYouLookinAt_SecuriTay2015_presentation_web.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>On Relaying NFC Payment Transactions using Android devices</td>
+                     <td>RootedCon </td>
+                     <td>2015</td>
+                     <td>Ricardo J. Rodríguez y & José Vila </td>
+                     <td><a href="http://www.slideshare.net/cgvwzq/on-relaying-nfc-payment-transactions-using-android-devices" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Android: Back to the Future, Two or Too</td>
+                     <td>RootedCon</td>
+                     <td>2015</td>
+                     <td>Raúl Siles</td>
+                     <td><a href="http://www.dinosec.com/docs/Android-Back_to_the_Future_Too_Rooted2015_RaulSiles-DinoSec_v1.0.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Understanding IMSI Privacy </td>
+                     <td>BlackHat USA</td>
+                     <td>2015</td>
+                     <td> Ravishankar Borgaonkar & Swapnil Udar</td>
+                     <td><a href="https://www.isti.tu-berlin.de/fileadmin/fg214/ravi/Darshak-bh14.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  </tr>
+                  <tr>
+                     <td>Android FakeID Vulnerability Wwalkthrough</td>
+                     <td>BlackHat USA </td>
+                     <td>2015</td>
+                     <td>Jeff Forrista</td>
+                     <td><a href="https://www.blackhat.com/docs/us-14/materials/us-14-Forristal-Android-FakeID-Vulnerability-Walkthrough.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  </tr>
+                  <tr>
+                     <td>Reflection On Trusting Trustzone</td>
+                     <td>BlackHat USA</td>
+                     <td>2015</td>
+                     <td>Dan Rosenberg</td>
+                     <td><a href="https://www.blackhat.com/docs/us-14/materials/us-14-Rosenberg-Reflections-on-Trusting-TrustZone.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  </tr>
+                  <tr>
+                     <td>Researching Android Device Security With The Help Of A Droid Army</td>
+                     <td>BlackHat USA</td>
+                     <td>2015</td>
+                     <td>Joshua Drake</td>
+                     <td><a href="https://www.blackhat.com/docs/us-14/materials/us-14-Drake-Researching-Android-Device-Security-With-The-Help-Of-A-Droid-Army.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  </tr>
+                  <tr>
+                     <td>MyY Google Glass Sees Your Passwords!</td>
+                     <td>BlackHat USA</td>
+                     <td>2015</td>
+                     <td>Xinwen Fu & Qinggang Yue & Zhen Ling</td>
+                     <td><a href="https://www.blackhat.com/docs/us-14/materials/us-14-Fu-My-Google-Glass-Sees-Your-Passwords.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  </tr>
+                  <tr>
+                     <td>Cellular Exploitation On A Global Scale: The Rise And Fall Of The Ccontrol Protocol </td>
+                     <td>BlackHat USA</td>
+                     <td>2015</td>
+                     <td>Mathew Solnik & Marc Blanchou</td>
+                     <td><a href="https://www.blackhat.com/docs/us-14/materials/us-14-Solnik-Cellular-Exploitation-On-A-Global-Scale-The-Rise-And-Fall-Of-The-Control-Protocol.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Android FakeId Vulnerability</td>
+                     <td>Blackhat</td>
+                     <td>2014</td>
+                     <td>Jeff Forristal</td>
+                     <td><a href="https://bluebox.com/technical/blackhat-fake-id-talk-material-and-follow-up/" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Mobile Analysis Kung Fu, Santoku Style</td>
+                     <td>RSA Conference</td>
+                     <td>2014</td>
+                     <td>Andrew Hoog & Sebastián Guerrero</td>
+                     <td><a href="http://www.rsaconference.com/writable/presentations/file_upload/anf-w03-mobile-analysis-kung-fu-santoku-style_v2.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Beginners Guide to Reverse Engineering Android Apps</td>
+                     <td>RSA Conference</td>
+                     <td>2014</td>
+                     <td>Pau Oliva Fora</td>
+                     <td><a href="http://www.rsaconference.com/writable/presentations/file_upload/stu-w02b-beginners-guide-to-reverse-engineering-android-apps.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Touchlogger on iOS and Android</td>
+                     <td>RSA Conference</td>
+                     <td>2014</td>
+                     <td>Neal Hindocha & Nathan McCauley</td>
+                     <td><a href="http://www.rsaconference.com/writable/presentations/file_upload/mbs-w01-touchlogger-on-ios-and-android-v2.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Predatory Hacking of Mobile: Real Demos </td>
+                     <td>RSA Conference</td>
+                     <td>2014</td>
+                     <td>Jeff Forristal</td>
+                     <td><a href="http://www.rsaconference.com/writable/presentations/file_upload/mbs-w03-predatory-hacking-of-mobile-real-demos-v2.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Reverse Engineering, Pentesting and Hardening of Android Apps</td>
+                     <td>DroidCon</td>
+                     <td>2014</td>
+                     <td>Marco Grassi</td>
+                     <td><a href="https://speakerd.s3.amazonaws.com/presentations/25bc54e0728001318b20063debaef239/DroidconIT2014.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>DREBIN: Effective and Explainable Detection of Android Malware in Your Pocket</td>
+                     <td>NDSS</td>
+                     <td>2014</td>
+                     <td>Daniel Arp, Michael Spreitzenbarth, Malte Hubner, Hugo Gascon & Konrad Rieck</td>
+                     <td><a href="http://filepool.informatik.uni-goettingen.de/publication/sec//2014-ndss.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Execute This! Analyzing Unsafe and Malicious Dynamic Code Loading in Android Applications </td>
+                     <td>NDSS</td>
+                     <td>2014</td>
+                     <td>Sebastian Poeplau, Yanick Fratantonio, Antonio Bianchi, Christopher Kruegel, Giovanni Vigna</td>
+                     <td><a href="https://anonymous-proxy-servers.net/paper/android-remote-code-execution.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>AppSealer: Automatic Generation of Vulnerability-Specific Patches for Preventing Component Hijacking Attacks in Android Applications</td>
+                     <td>NDSS</td>
+                     <td>2014</td>
+                     <td>Mu Zhang, Heng Yin</td>
+                     <td><a href="http://sycurelab.ecs.syr.edu/%7Emu/AppSealer-ndss14.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>SMV-Hunter: Large Scale, Automated Detection of SSL/TLS Man-in-the-Middle Vulnerabilities in Android Apps</td>
+                     <td>NDSS</td>
+                     <td>2014</td>
+                     <td>David Sounthiraraj, Justin Sahs, Zhiqiang Lin, Latifur Khan, Garrett Greenwood</td>
+                     <td><a href="https://www.utdallas.edu/%7Ezxl111930/file/NDSS14b.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>AirBag: Boosting Smartphone Resistance to Malware Infection</td>
+                     <td>NDSS</td>
+                     <td>2014</td>
+                     <td>Chiachih Wu, Yajin Zhou, Kunal Patel, Zhenkai Liang, Xuxian Jiang</td>
+                     <td><a href="http://yajin.org/papers/ndss14_airbag.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Pre-installed Android application poisoning</td>
+                     <td>AppSecAsiaPac</td>
+                     <td>2014</td>
+                     <td>Yoshitaka Kato</td>
+                     <td><a href="https://speakerdeck.com/owaspjapan/pre-installed-android-application-poisoning-number-appsecapac2014" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Rage Against the Virtual Machine: Hindering Dynamic Analysis of Android Malware</td>
+                     <td>EuroSec</td>
+                     <td>2014</td>
+                     <td>Thanasis Petsas, Giannis Voyatzis, Elias Athanasopoulos, Sotiris Ioannidis, Michalis Polychronakis </td>
+                     <td><a href="http://www.syssec-project.eu/m/documents/eurosec14/RATVM.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Pentesting Android Applications</td>
+                     <td>Confraria Segurança PT</td>
+                     <td>2014</td>
+                     <td>Cláudio André</td>
+                     <td><a href="http://www.slideshare.net/clviper/pentesting-android-applications" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Tricks for image handling in Android</td>
+                     <td>DroidCon Berlin</td>
+                     <td>2014</td>
+                     <td>Tyrone Nicholas</td>
+                     <td><a href="http://www.slideshare.net/tyronenicholas/devoxx-images-android" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Post-Mortem Memory Analysis of Cold-Booted Android Devices</td>
+                     <td>IMF</td>
+                     <td>2014</td>
+                     <td>Christian Hilgers, Holger Macht, Tilo Muller, Michael Spreitzenbarth</td>
+                     <td><a href="http://www.homac.de/publications/Post-Mortem-Memory-Analysis-of-Cold-Booted-Android-Devices-slides.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Execute this! Looking into code-loading techniques on Android</td>
+                     <td>Honeynet Project Workshop </td>
+                     <td>2014</td>
+                     <td>Sebastian Poeplau, Yanick Fratantonio, Antonio Bianchi, Christopher Kruegel, Giovanni Vigna</td>
+                     <td><a href="http://warsaw2014.honeynet.org/slides/honeynet2014-day1-Sebastian.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Exploiting the Bells and Whistles: Uncovering OEM Vulnerabilities in Android</td>
+                     <td>CarolinaCon</td>
+                     <td>2014</td>
+                     <td>Jake Valletta</td>
+                     <td><a href="http://thecobraden.com/uploads/Valletta%20-%20CarolinaCon%20X%20-%20Exploiting%20the%20Bells%20and%20Whistles.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Enter Sandbox: Android Sandbox Comparison</td>
+                     <td>MOBILE SECURITY TECHNOLOGIES</td>
+                     <td>2014</td>
+                     <td>Sebastian Neuner, Victor van der Veen, Martina Lindorfer, Markus Huber, Georg Merzdovnik, Martin Mulazzani and Edgar Weipp</td>
+                     <td><a href="http://mostconf.org/2014/slides/s3p1-slides.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>A Systematic Security Evaluation of Android's Multi-User Framework</td>
+                     <td>MOBILE SECURITY TECHNOLOGIES</td>
+                     <td>2014</td>
+                     <td>Paul Ratazzi, Yousra Aafer, Amit Ahlawat, Hao Hao, Yifei Wang and Wenliang Du</td>
+                     <td><a href="http://mostconf.org/2014/slides/s3p3-slides.pptx" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Sprobes: Enforcing Kernel Code Integrity on the TrustZone Architecture</td>
+                     <td>MOBILE SECURITY TECHNOLOGIES</td>
+                     <td>2014</td>
+                     <td>Xinyang Ge, Hayawardh Vijayakumar and Trent Jaeger</td>
+                     <td><a href="http://mostconf.org/2014/slides/s2p3-slides.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Android Packers:Separating from the pack </td>
+                     <td>Hacktivity</td>
+                     <td>2014</td>
+                     <td>Ruchna Nigam</td>
+                     <td><a href="http://www.fortiguard.com/paper/Android-Packers--Hacktivity2014/" target="_blank">Link</a></td>
+                  </tr>
+                  </tr>
+                  </tr>
+                  <tr>
+                     <td>ASM: A Programmable Interface for Extending Android Security</td>
+                     <td>23rd USENIX Security Symposium </td>
+                     <td>2014</td>
+                     <td>Stephan Heuser, Adwait Nadkarni, William Enck, Ahmad-Reza Sadeghi </td>
+                     <td><a href="https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-heuser.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  </tr>
+                  <tr>
+                     <td>Peeking into Your App without Actually Seeing it: UI State Inference and Novel Android Attacks</td>
+                     <td>23rd USENIX Security Symposium</td>
+                     <td>2014</td>
+                     <td>Qi Alfred Chen, Zhiyun Qian, Z. Morley Mao</td>
+                     <td><a href="https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-chen.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  </tr>
+                  <tr>
+                     <td>On the Feasibility of Automa3cally Generating Android Component Hijacking Exploits</td>
+                     <td>Hitcon</td>
+                     <td>2014</td>
+                     <td>Wu Daoyuan</td>
+                     <td><a href="http://hitcon.org/2014/downloads/P1_09_Daoyuan%20Wu%20-%20On%20the%20Feasibility%20of%20Automatically%20Generating%20Android%20Component%20Hijacking%20Exploits.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  </tr>
+                  <tr>
+                     <td>Play Flappy Bird while you pentest Android in style</td>
+                     <td>Hitcon</td>
+                     <td>2014</td>
+                     <td>Chris Liu & Matthew Lionetti</td>
+                     <td><a href="http://hitcon.org/2014/downloads/P1_10_Chris%20Liu%20-%20Matthew%20Lionetti%20-%20TackyDroid%20Slides.pptx" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Bypassing wifi pay-walls with Android</td>
+                     <td>RootedCon</td>
+                     <td>2014</td>
+                     <td>Pau Oliva Fora </td>
+                     <td><a href="http://www.slideshare.net/rootedcon/pau-olivafora-rootedcon2014" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>A distributed approach to malware analysis</td>
+                     <td>BruCON 0x06</td>
+                     <td>2014</td>
+                     <td>Daan Raman</td>
+                     <td><a href="https://speakerdeck.com/nviso/a-distributed-approach-to-malware-analysis-brucon-0x06-daan-raman" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Enter The Snapdragon!</td>
+                     <td>Hacktivity</td>
+                     <td>2014</td>
+                     <td>Daniel Komaromy</td>
+                     <td><a href="https://www.hacktivity.com/en/downloads/archives/319/" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Android Forensics: The Joys of JTAG</td>
+                     <td>Ruxcon</td>
+                     <td>2014</td>
+                     <td>tty0x80</td>
+                     <td><a href="https://ruxcon.org.au/assets/2014/slides/tty0x80-Ruxcon%20Presentation-12th-October-2014-for-release.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>TACKYDROID: Pentesting Android Applications in Style </td>
+                     <td>HiTB KUL</td>
+                     <td>2014</td>
+                     <td>Chris Liu & Matthew Lionetti</td>
+                     <td><a href="http://conference.hitb.org/hitbsecconf2014kul/materials/D2T2%20-%20Chris%20Liu%20and%20Matthew%20Lionetti%20-%20TackyDroid.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>BREAKING “SECURE” MOBILE APPLICATIONS </td>
+                     <td>HiTB KUL</td>
+                     <td>2014</td>
+                     <td>Dominic Chell</td>
+                     <td><a href="http://conference.hitb.org/hitbsecconf2014kul/materials/D2T1%20-%20Dominic%20Chell%20-%20Breaking%20Secure%20Mobile%20Applications.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Hide Android Applications in Images</td>
+                     <td>BlackHat Europe</td>
+                     <td>2014</td>
+                     <td>Axelle Apvrille & Ange Albertini</td>
+                     <td><a href="https://www.blackhat.com/docs/eu-14/materials/eu-14-Apvrille-Hide-Android-Applications-In-Images.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>MAN IN THE BINDER: HE WHO CONTROLS IPC, CONTROLS THE DROID</td>
+                     <td>BlackHat Europe</td>
+                     <td>2014</td>
+                     <td>Nitay Artenstein & Idan Revivo</td>
+                     <td><a href="https://www.blackhat.com/docs/eu-14/materials/eu-14-Artenstein-Man-In-The-Binder-He-Who-Controls-IPC-Controls-The-Droid.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Mobile Hacking – Reverse Engineering the Android OS</td>
+                     <td>HackerHalted</td>
+                     <td>2014</td>
+                     <td>Tom Updegrove</td>
+                     <td><a href="http://www.slideshare.net/EC-Council/hacker-halted-2014-reverse-engineering-the-android-os" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Making Android's Bootable Recovery Work For You</td>
+                     <td>EkoParty</td>
+                     <td>2014</td>
+                     <td>Drew Suarez at EkoParty</td>
+                     <td><a href="http://matasano.com/research/eko2014_recovery.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>An Infestation of Dragons: Exploring Vulnerabilities in the ARM TrustZone Architecture</td>
+                     <td>PacSec Japan</td>
+                     <td>2014</td>
+                     <td>Josh "m0nk" Thomas, Charles Holmes & Nathan Keltner</td>
+                     <td><a href="https://pacsec.jp/psj14/PSJ2014_Josh_PacSec2014-v1.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Hey, we catch you - dynamic analysis of Android applications</td>
+                     <td>PacSec Japan</td>
+                     <td>2014</td>
+                     <td>Wenjun Hu</td>
+                     <td><a href="https://pacsec.jp/psj14/PSJ2014_Wenjun_Hey-%20We%20Catch%20You%20-%20Dynamic%20Analysis%20of%20Android%20Applications.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Steroids for your App Security Assessment </td>
+                     <td>ZeroNights</td>
+                     <td>2014</td>
+                     <td>Marco Grassi</td>
+                     <td><a href="http://2014.zeronights.org/assets/files/slides/grassi.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Racing with DROIDS</td>
+                     <td>ZeroNights</td>
+                     <td>2014</td>
+                     <td> Peter Hlavaty</td>
+                     <td><a href="http://2014.zeronights.org/assets/files/slides/racingwithdroids.pdf" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Creating a kewl and simple Cheating Platform on Android</td>
+                     <td>DeepSec</td>
+                     <td>2014</td>
+                     <td>Milan Gabor & Danijel Grah</td>
+                     <td><a href="https://deepsec.net/docs/Slides/2014/Creating_a_kewl_and_simple_Cheating_Platform_on_Android_-_Milan_Gabor-Danijel_Grah.pdf" target="_blank">Link</a></td>
+                  </tr>
+               </tbody>
+            </table>
+            <a id="contribute" class="anchor" href="#contribute" aria-hidden="true"></a>
+            <h2><i class="fa fa-github"></i> Contribute <a href="#contribute"><span class="octicon octicon-link"></span></a></h2>
+            <p>It is awesome to see that you want to contribute in this wiki, which would directly help the community. Project/Tools which are no longer maintained are not included in this wiki. List of awesome contributors to this wiki is given below. Please follow one of the ways from below to include tool or resource in this wiki-</p>
+            <ul>
+               <li>
+                  <p>Tweet the resource to <a href="https://twitter.com/exploitprotocol" target="_blank">@exploitprotocol</a></p>
+               </li>
+               <li>
+                  <p>Shoot an email to <strong><a href="mailto:aditya@manifestsecurity.com">aditya@manifestsecurity.com</a></strong></p>
+               </li>
+               <li>
+                  <p>Create a pull request or an issue to <a href="https://github.com/exploitprotocol/android-security-wiki/tree/gh-pages" target="_blank">Android Security Wiki Repository</a> gh-pages branch. Please add content in index.html in gh-pages branch if creating an pull request.</p>
+               </li>
+            </ul>
+            <p>Please let me know if you have any suggestions</p>
+            <p>Below is the list of awesome people who contributed to this wiki.</p>
+            <ul>
+               <li><a href="https://twitter.com/c0d3xpl0it" target="_blank">Pralhad Chaskar</a></li>
+               <li><a href="http://anantshri.info" target="_blank">Anant Shrivastava</a></li>
+               <li><a href="">Michael Freeman</a></li>
+               <li><a href="">Esteban</a></li>
+               <li><a href="http://prakharbhardwaj.in/" target="_blank">Prakhar Bhardwaj</a></li>
+               <li><a href="https://www.facebook.com/thomas.blessen" target="_blank">Blessen Thomas</a></li>
+               <li><a href="https://twitter.com/hslatman" target="_blank">Herman Slatman</a></li>
+               <li><a href="http://delhi.securitycompass.com" target="_blank">Abhineet Jayaraj</a></li>
+               <li><a href="https://www.blackhat.com/eu-14/speakers/Sagi-Kedmi.html" target="_blank">Sagi Kedmi</a></li>
+               <li><a href="http://in.linkedin.com/in/ankitsrivastav9nov" target="_blank">Ankit Kumar</a></li>
+               <li><a href="http://www.parbhatpuri.com/" target="_blank">Parbhat Puri</a></li>
+               <li><a href="https://blog.fortinet.com/author/ruchna-nigam" target="_blank">Ruchna Nigam</a></li>
+               <li><a href="https://twitter.com/Abhinav_Sejpal" target="_blank">Abhinav Sejpal</a></li>
+               <li><a href="https://twitter.com/specter_labs" target="_blank">Shane Hartman</a></li>
+               <li><a href="https://twitter.com/h3xstream" target="_blank">Philippe Arteau</a></li>
+            </ul>
+         </section>
+      </div>
+      <div class="wrapper" id="ios" >
+         <nav>
+            <ul></ul>
+         </nav>
+         <section>
+            <p><span style="cursor:pointer;" title="Android" class="fa fa-android fa-3x" onclick="display_section('android')"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="cursor:pointer;" title="iOS" class="fa fa-apple fa-3x" onclick="display_section('ios')"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="cursor:pointer;" title="Windows App" class="fa fa-windows fa-3x" onclick="display_section('windows')"></span></p>
+            <p>Please click on above icons to navigate between Wikis.</p>
+            <p>Please use left sidebar to navigate between sections.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Updated on: <strong>4-May-2015</strong></p>
+            <a id="disassemblers-tools" class="anchor" href="#disassemblers-tools" aria-hidden="true" style="visibility: hidden"></a>
+            <h2><i class="fa fa-cogs"></i> Disassemblers Tools <a href="#disassemblers-tools"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li><p><a href="https://code.google.com/p/networkpx/wiki/class_dump_z" target="_blank">Class Dump Z</a> -  Extracting class interface for Objective-C version 2 ABI. </p></li>
+               <li><p><a href="https://www.hex-rays.com/products/ida/index.shtml" target="_blank">IDA Pro</a>- IDA is a Windows, Linux or Mac OS X hosted multi-processor disassembler and debugger that offers so many features it is hard to describe them all.</p></li>
+               <li><p><a href="http://hopperapp.com/" target="_blank">HopperApp</a> - Hopper is a reverse engineering tool for OS X and Linux, that lets you disassemble, decompile and debug your 32/64bits Intel Mac, Linux, Windows and iOS executables!</p></li>
+               <li><p><a href="http://www.unix.com/man-page/osx/1/otool/" target="_blank">otool</a> - The otool command displays specified parts of object files or libraries. It can also disassemble</p></li>
+               <li><p><a href="http://unixhelp.ed.ac.uk/CGI/man-cgi?strings" target="_blank">strings</a> - strings is a simple utility that will print all the strings in a given binary.</p></li>
+               <li><p><a href="http://unixhelp.ed.ac.uk/CGI/man-cgi?nm" target="_blank">nm</a> - nm is a utility that displays the symbol table of a given binary.</p></li>
+            </ul>
+            <a id="iOS-forensic-tools" class="anchor" href="#iOS-forensic-tools" aria-hidden="true" style="visibility: hidden"></a>
+            <h2><i class="fa fa-folder"></i> iOS Forensic Tools <a href="#iOS-forensic-tools"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li><p><a href="http://www.sleuthkit.org/sleuthkit/" target="_blank">SleuthKit</a> - The Sleuth Kit® is a collection of command line tools and a C library that allows you to analyze disk images and recover files from them. It is used behind the scenes in Autopsy and many other open source and commercial forensics tools.</p></li>
+               <li><p><a href="http://www.sleuthkit.org/mac-robber/index.php" target="_blank"> Mac-robber</a> - mac-robber is a digital investigation tool that collects data from allocated files in a mounted file system. This is useful during incident response when analyzing a live system or when analyzing a dead system in a lab.</p></li>
+               <li><a href="http://www.oxygen-forensic.com/en/" target="_blank">Oxygen Forensics Suite</a></li>
+               <li><p><a href="https://www.blackbagtech.com/software-products/mobilyze.html" target="_blank">Mobilyze</a> - Mobilyze is a mobile data triage tool, designed to give users immediate access to data from iOS and Android devices. </p></li>
+               <li><a href="https://www.paraben.com/device-seizure.html" target="_blank">Paraben Device Seizure</a></li>
+               <li><p><a href="http://www.crypticbit.com/zen/products/iphoneanalyzer" target="_blank">iPhone Analyzer</a> - iPhone Analzyer allows you to forensically examine or recover date from in iOS device.</p></li>
+               <li><p><a href="http://mobilesyncbrowser.com/" target="_blank">Mobile Sync Browser</a> - Access your iOS backups</p></li>
+               <li><a href="https://code.google.com/p/iphonebackupbrowser/" target="_blank">iPhone Backup Browser</a></li>
+               
+            </ul>
+            <a id="iOS-dynamic-analysis-tools" class="anchor" href="#iOS-dynamic-analysis-tools" aria-hidden="true" style="visibility: hidden"></a>
+            <h2><i class="fa fa-cogs"></i> iOS Dynamic Analysis Tools <a href="#iOS-dynamic-analysis-tools"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li><p><a href="https://github.com/iSECPartners/ios-ssl-kill-switch" target=_blank">iOS SSL Kill Switch</a> - Blackbox tool to disable SSL certificate validation - including certificate pinning - within iOS Apps</p></li>
+               <li><p><a href="http://www.cycript.org/" target=_blank">cycript</a> - Cycript allows developers to explore and modify running applications on either iOS or Mac OS X using a hybrid of Objective-C++ and JavaScript syntax through an interactive console that features syntax highlighting and tab completion.</p></li>
+               <li><p><a href="https://appsec-labs.com/iNalyzer/" target="_blank">iNalyzer</a> - 
+AppSec Labs iNalyzer is a framework for manipulating iOS applications, tampering with parameters and methods; no sources needed! AppSec Labs iNalyzer targets closed applications, turning a painful Black Box into an automatic Gray-Box effort.</p></li>
+               <li><p><a href="https://github.com/dmayer/idb" target="_blank">idb</a> - idb is a tool to simplify some common tasks for iOS pentesting and research</p></li>
+               <li><p><a href="https://code.google.com/p/snoop-it/" target="_blank">snoop-it</a> - A tool to assist security assessments and dynamic analysis of iOS Apps</p></li>
+               <li><p><a href="https://github.com/iSECPartners/Introspy-iOS" target="_blank">Introspy-iOS</a> - Blackbox tool to help understand what an iOS application is doing at runtime and assist in the identification of potential security issues.</p></li>
+               <li><p><a href="https://github.com/XSecurity/Xsecurity" target="_blank">XSecurity</a> - A security plug-in in Xcode plus a Clang Static Analyzer Checkers for iOS application development. This plug-in aims to reduce the vulnerability made during development by detecting the vulnerability as it is being created.</p></li>
+            </ul>
+            <a id="iOS-reverse-engineeing-tools" class="anchor" href="#iOS-reverse-engineering-tools" aria-hidden="true" style="visibility: hidden"></a>
+            <h2><i class="fa fa-backward"></i> iOS Reverse Engineering Tools <a href="#iOS-reverse-engineering-tools"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li><p><a href="https://github.com/BishopFox/iSpy" target="_blank">iSpy</a> - A reverse engineering framework for iOS</p></li>
+               <li><p><a href="https://github.com/S3Jensen/iRET" target="_blank">iRET</a> - The iOS Reverse Engineering Toolkit is a toolkit designed to automate many of the common tasks associated with iOS penetration testing. </p></li>
+               <li><p><a href="http://www.cycript.org/" target=_blank">cycript</a> - Cycript allows developers to explore and modify running applications on either iOS or Mac OS X using a hybrid of Objective-C++ and JavaScript syntax through an interactive console that features syntax highlighting and tab completion.</p></li>
+               <li><p><a href="https://github.com/DHowett/theos/blob/master/bin/logify.pl" target="_blank">Logify</a> -  Logify takes an Objective-C header file containing a class interface and generates a Logos file hooking all methods in the given class, and for each hook logging the call of the method (with parameters) to the syslog</p></li>
+               
+            </ul>
+            <a id="iOS-tutorials" class="anchor" href="#iOS-tutorials" aria-hidden="true" style="visibility: hidden"></a>
+            <h2><i class="fa fa-university"></i> iOS Tutorials <a href="#iOS-tutorials"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li><a href="http://resources.infosecinstitute.com/author/prateek/" target="_blank">iOS Applications Security Series</a><li>
+            </ul>
+            <a id="iOS-best-practices" class="anchor" href="#iOS-best-practices" aria-hidden="true" style="visibility: hidden"></a>
+            <h2><i class="fa fa-thumbs-up"></i> iOS Best Practices <a href="#iOS-best-practices"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li><a href="https://developer.apple.com/library/ios/documentation/Security/Conceptual/SecureCodingGuide/Introduction.html#//apple_ref/doc/uid/TP40002477-SW1" target="_blank">iOS Secure Coding Guide</a></li>
+               <li><a href="https://www.apple.com/business/docs/iOS_Security_Guide.pdf" target="_blank">iOS Security Guide</a></li>
+            </ul>
+            
+            <a id="ios-books" class="anchor" href="#ios-books" aria-hidden="true"></a>
+            <h2><i class="fa fa-book"></i> iOS Books <a href="#ios-books"><span class="octicon octicon-link"></span></a></h2>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Book</th>
+                     <th>Year</th>
+                     <th>Author</th>
+                     <th>Link</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Learning iOS Forensics</td>
+                     <td>2015</td>
+                     <td>Mattia Epifani, Pasquale Stirparo</td>
+                     <td><a href="https://www.packtpub.com/networking-and-servers/learning-ios-forensics" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>iOS Application Security: The Definitive Guide for Hackers and Developers</td>
+                     <td>2015</td>
+                     <td>David Theil</td>
+                     <td><a href="http://www.amazon.com/iOS-Application-Security-Definitive-Developers/dp/159327601X" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>iOS Hackers handbook</td>
+                     <td>2012</td>
+                     <td>Charlie Miller, Dion Blazakis, Dino Diazovi, Stefan Esser, Vincenzo Iozzo, Ralf-Philipp Weinmann</td>
+                     <td><a href="http://www.amazon.com/iOS-Hackers-Handbook-Charlie-Miller/dp/1118204123" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>Hacking and Securing iOS Applications</td>
+                     <td>2012</td>
+                     <td>Jonathan Zdziarski</td>
+                     <td><a href="http://www.amazon.com/Hacking-Securing-iOS-Applications-Hijacking/dp/1449318746" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                     <td>iPhone and iOS Forensics</td>
+                     <td>2011</td>
+                     <td>Andrew Hoog, Katie Strzempka</td>
+                     <td><a href="http://www.amazon.com/iPhone-iOS-Forensics-Investigation-Analysis/dp/1597496596" target="_blank">Link</a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </section>
+      </div>
+      
+      <div class="wrapper" id="windows" >
+         <nav>
+            <ul></ul>
+         </nav>
+         <section>
+            <p><span style="cursor:pointer;" title="Android" class="fa fa-android fa-3x" onclick="display_section('android')"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="cursor:pointer;" title="iOS" class="fa fa-apple fa-3x" onclick="display_section('ios')"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="cursor:pointer;" title="Windows App" class="fa fa-windows fa-3x" onclick="display_section('windows')"></span></p>
+            <p>Please click on above icons to navigate between Wikis.</p>
+            <p>Please use left sidebar to navigate between sections.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Updated on: <strong>4-May-2015</strong></p>
+            <a id="windows-tools" class="anchor" href="#windows-tools" aria-hidden="true" style="visibility: hidden"></a>
+            <h2><i class="fa fa-windows"></i> Windows Tools <a href="#windows-tools"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li><p><a href="https://github.com/sensepost/XAPSpy" target="_blank">XAPSpy</a> - runtime analysis of windows phone 7 applications</p></li>
+               <li><p><a href="https://xapspyanalysis.codeplex.com/" target="_blank">XapSpyAnalysis</a> - XapSpyAnalysis is an extension to Behrang Fouladis excellent XapSpy tool. XapSpy enables you to debug method calls and variables for Windows Phone 7 XAP packages on the device emulator.</p></li>
+               <li><p><a href="http://ilspy.net/" target="_blank">ILSpy</a> - ILSpy is the open-source .NET assembly browser and decompiler.</p></li>
+               <li><p><a href="https://github.com/andreycha/tangerine" target="_blank">Tangerine</a> - Tool for inspecting Windows Phone applications</p></li>
+               <li><p><a href="http://xamlspy.com/" target="_blank">xaml spy</a> - XAML Spy provides a real-time view of your app's state. Examine and modify the properties of any element on-the-fly and see the changes reflected immediately in the running app.</p></li>
+               <li><p><a href="http://sourceforge.net/projects/dile/" target="_blank">Dotnet IL Editor</a> - Dotnet IL Editor (DILE) allows disassembling and debugging .NET 1.0/1.1/2.0/3.0/3.5/4.0 applications without source code or .pdb files. It can debug even itself or the assemblies of the .NET Framework on IL level.</p></li>
+               <li><p><a href="http://reflexil.net/" target="_blank">Reflexil</a> - Reflexil is an assembly editor and runs as a plug-in for Red Gate's Reflector, ILSpy and Telerik's JustDecompile. Reflexil is using Mono.Cecil, written by Jb Evain and is able to manipulate IL code and save the modified assemblies to disk. Reflexil also supports C#/VB.NET code injection.</p></li>
+               <li><p><a href="https://wp8webserver.codeplex.com/" target="_blank">WP8 Native Access Webserver</a> - Want to access files and registry data on a running WP8 device from your PC? This is the tool for that.</p></li>
+               <li><p><a href="http://www.microsoft.com/en-in/download/details.aspx?id=11910" target="_blank">Binscope Binary Analyzer</a> - BinScope is a Microsoft verification tool that analyzes binaries on a project-wide level to ensure that they have been built in compliance with Microsoft’s Security Development Lifecycle (SDL) requirements and recommendations.</p></li>
+               <li><p><a href="https://github.com/gebucholz/Phate" target="_blank">Phate</a> - A network server and library for exploring Windows Phone 8</p></li>
+            </ul>
+         </section>
+      </div>
+      
+      <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+      
+      <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+         
+         ga('create', 'UA-62565323-1', 'auto');
+         ga('send', 'pageview');
+         
+      </script>
+      <script>
+         window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+      </script>
+      <script>
 
-<a id="forensics-tools" class="anchor" href="#forensics-tools" aria-hidden="true"></a>
-<h2><i class="fa fa-folder"></i> Forensics Tools <a href="#forensics-tools"><span class="octicon octicon-link"></span></a></h2>
-
-<ul>
-<li><p><a href="https://github.com/viaforensics/android-forensics" target="_blank">Android Forensics</a> - Open Source Android Forensics App and Framework</p></li>
-<li><p><a href="https://github.com/mspreitz/ADEL" target="_blank">Android Data Extractor Lite</a></p></li>
-<li><p><a href="http://www.bitpim.org/" target="_blank">BitPim</a> - BitPim is a program that allows you to view and manipulate data on many CDMA 
-phones from LG, Samsung, Sanyo and other manufacturers.</p></li>
-<li><p><a href="https://github.com/504ensicsLabs/LiME" target="_blank">LiME</a> - LiME (formerly DMD) is a Loadable Kernel Module (LKM), which allows the acquisition of volatile memory from Linux and Linux-based devices, such as those powered by Android.</p></li>
-<li><p><a href="http://www.osaf-community.org/" target="_blank">Open Source Android Forensics</a></p></li>
-<li><p><a href="https://github.com/kosborn/p2p-adb/" target="_blank">P2P-ADB</a> - Phone to Phone Android Debug Bridge - A project for "debugging" phones from other phones.</p></li>
-<li><p><a href="https://www.isecpartners.com/tools/mobile-security/pysimreader.aspx" target="_blank">pySimReader</a> - It allows users to write out arbitrary raw SMS PDUs to a SIM card.</p></li>
-</ul>
-
-<a id="development-tools" class="anchor" href="#development-tools" aria-hidden="true"></a>
-<h2><i class="fa fa-code"></i> Development Tools <a href="#development-tools"><span class="octicon octicon-link"></span></a></h2>
-
-<ul>
-<li><p><a href="https://developer.android.com/sdk/index.html" target="_blank">Android SDK</a> - The Android software development kit (SDK) includes a comprehensive set of development tools. These include a debugger, libraries, a handset emulator based on QEMU, documentation, sample code, and tutorials.</p></li>
-<li><p><a href="https://developer.android.com/tools/sdk/ndk/index.html" target="_blank">Android NDK</a> - The NDK is a toolset that allows you to implement parts of your app using native-code languages such as C and C++.</p></li>
-<li>
-<p><a href="https://developer.android.com/sdk/index.html" target="_blank">ADT Bundle</a> -  The Android Developer Tools(ADT) bundle is a single download that contains everything for developers to start creating Android Application</p>
-
-<ul>
-<li>Android Studio IDE or Eclipse IDE</li>
-<li>Android SDK tools</li>
-<li>Android 5.0 (Lollipop) Platform</li>
-<li>Android 5.0 emulator system image with Google APIs</li>
-</ul>
-</li>
-<li>
-<p><a href="https://bitbucket.org/jigsaw_echo/armexec" target="_blank">Native Android Runtime Emulation</a> - A native Android emulator featuring the following functions:</p>
-
-<ul>
-<li>Full stack support for ELF built by Android NDK.</li>
-<li>Seeminglessly native gdb support.</li>
-<li>Link and load shared library.</li>
-<li>Open to extension of different architecture and C runtime. </li>
-</ul>
-</li>
-
-<li><p><a href="https://github.com/Stericson/RootTools" target="_blank">Root Tools</a> - RootTools provides rooted developers a standardized set of tools for use in the development of rooted applications.</p></li>
-</ul>
-
-<a id="static-analysis-tools" class="anchor" href="#static-analysis-tools" aria-hidden="true"></a>
-<h2><i class="fa fa-search"></i> Static Analysis Tools <a href="#static-analysis-tools"><span class="octicon octicon-link"></span></a></h2>
-
-<ul>
-<li><p><a href="https://github.com/maaaaz/androwarn/">Androwarn</a>:- Yet another static code analyzer for malicious Android applications</p></li>
-<li><p><a href="https://github.com/sonyxperiadev/ApkAnalyser" target="_blank">ApkAnalyser</a> - ApkAnalyser is a static, virtual analysis tool for examining and validating the development work of your Android app.</p></li>
-<li><p><a href="https://github.com/honeynet/apkinspector/" target="_blank">APKInspector</a> - APKinspector is a powerful GUI tool for analysts to analyze the Android applications.</p></li>
-<li><p><a href="https://github.com/google/error-prone" target="_blank">Error-Prone</a> - Catch common Java mistakes as compile-time errors</p></li>
-<li><p><a href="http://findbugs.sourceforge.net/" target="_blank">FindBugs</a> + <a href="http://h3xstream.github.io/find-sec-bugs/" target="_blank">FindSecurityBugs</a> - FindSecurityBugs is a extension for FindBugs which include security rules for Java applications. It will find cryptography problems as well as Android specific problems.</p></li>
-<li><p><a href="http://sseblog.ec-spride.de/tools/flowdroid/" target="_blank">FlowDroid</a> - FlowDroid is a context-, flow-, field-, object-sensitive and lifecycle-aware static taint analysis tool for Android applications.</p></li>
-<li><p><a href="http://developer.android.com/tools/help/lint.html" target="_blank">Lint</a> - The Android lint tool is a static code analysis tool that checks your Android project source files for potential bugs and optimization improvements for correctness, security, performance, usability, accessibility, and internationalization.</p></li>
-<li><p><a href="https://github.com/EugenioDelfa/Smali-CFGs" target="_blank">Smali CFGs</a> - Smali Control Flow Graph's</p></li>
-<li><p><a href="https://code.google.com/p/smali/" target="_blank">Smali and Baksmali</a> - smali/baksmali is an assembler/disassembler for the dex format used by dalvik, Android's Java VM implementation.</p></li>
-<li><p><a href="http://pl.cs.colorado.edu/projects/thresher/" target="_blank">Thresher</a> - Thresher is a static analysis tool that specializes in checking heap reachability properties. Its secret sauce is using a coarse up-front points-to analysis to focus a precise symbolic analysis on the alarms reported by the points-to analysis.</p></li>
-</ul>
-
-<a id="dynamic-analysis-tools" class="anchor" href="#dynamic-analysis-tools" aria-hidden="true"></a>
-<h2><i class="fa fa-cogs"></i> Dynamic Analysis Tools <a href="#dynamic-analysis-tools"><span class="octicon octicon-link"></span></a></h2>
-
-<ul>
-<li><p><a href="https://github.com/AndroidHooker/hooker" target="_blank">Android Hooker</a> - This project provides various tools and applications that can be use to automaticaly intercept and modify any API calls made by a targeted application.</p></li>
-<li><p><a href="https://code.google.com/p/droidbox/" target="_blank">Droidbox</a> - DroidBox is developed to offer dynamic analysis of Android applications</p></li>
-<li><p><a href="https://www.mwrinfosecurity.com/products/drozer/" target="_blank">Drozer</a> - Drozer allows you to search for security vulnerabilities in apps and devices by assuming the role of an app and interacting with the Dalvik VM, other apps' IPC endpoints and the underlying OS.</p></li>
-<li><p><a href="http://forum.xda-developers.com/xposed/xposed-installer-versions-changelog-t2714053" target="_blank">Xposed Framework</a></p></li>
-</ul>
-
-<a id="reverse-engineering-tools" class="anchor" href="#reverse-engineering-tools" aria-hidden="true"></a>
-<h2><i class="fa fa-backward"></i> Reverse Engineering Tools <a href="#reverse-engineering-tools"><span class="octicon octicon-link"></span></a></h2>
-
-<ul>
-<li><p><a href="https://github.com/androguard/androguard" target="_blank">Androguard</a> - Reverse engineering, Malware and goodware analysis of Android applications ... and more (ninja !)</p></li>
-<li><p><a href="https://github.com/strazzere/android-lkms" target="_blank">Android loadble Kernel Modules</a> - It is mostly used for reversing and debugging on controlled systems/emulators.</p></li>
-<li><p><a href="https://github.com/swdunlop/AndBug" target="_blank">AndBug</a> - Android Debugging Library</p></li>
-<li><p><a href="https://code.google.com/p/android-apktool/" target="_blank">ApkTool</a> - A tool for reverse engineering Android Apk Files</p></li>
-<li><p><a href="https://apkstudio.codeplex.com/" target="_blank">APK Studio</a> - APK Studio is an IDE for decompiling/editing & then recompiling of android application binaries.</p></li>
-<li><p><a href="https://github.com/Konloch/bytecode-viewer" target="_blank">Bytecode-Viewer</a> - A Java 8 Jar &amp; Android APK Reverse Engineering Suite (Decompiler, Editor, Debugger &amp; More)</p></li>
-<li><p><a href="https://github.com/mariokmk/dedex" target="_blank">dedex</a> - A command line tool for disassembling Android DEX files.</p></li>
-<li><p><a href="https://code.google.com/p/dex2jar/" target="_blank">Dex2Jar</a> - Tools to work with android .dex and java .class files</p></li>
-<li><p><a href="https://github.com/mariokmk/dexdisassembler" target="_blank">dexdisassembler</a> - A GTK tool for disassembling Android DEX files.</p></li>
-<li><p><a href="https://github.com/fesh0r/fernflower" target="_blank">Fern Flower</a> - FernFlower Java decompiler</p></li>
-<li><p><a href="https://github.com/sysdream/fino" target="_blank">Fino</a> - Android small footprint inspection tool</p></li>
-<li><p><a href="https://github.com/iSECPartners/Introspy-Android" target="_blank">Introspy-Android</a> - Blackbox tool to help understand what an Android application is doing at runtime and assist in the identification of potential security issues.</p></li>
-<li><p><a href="http://jd.benow.ca/" target="_blank">JD-Gui</a> - Yet another fast Java Decompiler</p></li>
-<li><p><a href="https://www.pnfsoftware.com/index" target="_blank">JEB</a> - The Interactive Android Decompiler</p></li>
-<li><p><a href="https://code.google.com/p/smali/" target="_blank">smali</a> - An assembler/disassembler for Android's dex format</p></li>
-</ul>
-
-<a id="hooking-tools" class="anchor" href="#hooking-tools" aria-hidden="true"></a>
-<h2><i class="fa fa-indent"></i> Hooking Tools <a href="#hooking-tools"><span class="octicon octicon-link"></span></a></h2>
-
-<ul>
-<li><p><a href="https://github.com/crmulliner/ddi" target="_blank">ADBI Framework</a> - Simple and easy to use toolkit for dynamic instrumentation of Dalvik code.</p></li>
-<li><p><a href="http://www.cydiasubstrate.com/" target="_blank">Cydia Substrate</a> - Cydia Substrate for Android enables developers to make changes to existing software with Substrate extensions that are injected in to the target process's memory.</p></li>
-<li><p><a href="http://forum.xda-developers.com/xposed/xposed-installer-versions-changelog-t2714053" target="_blank">Xposed Framework</a> - Xposed framework enables you to modify the system or application aspect and behaviour at runtime, without modifying any Android application package(APK) or re-flashing.</p></li>
-<li><p><a href="http://www.frida.re/" target="_blank">Frida</a> - Inject JavaScript to explore native apps on Android</p></li>
-</ul>
-
-<a id="obfuscator-tools" class="anchor" href="#obfuscator-tools" aria-hidden="true"></a>
-<h2><i class="fa fa-unlock-alt"></i> Obfuscators & Deobfuscators Tools <a href="#obfuscator-tools"><span class="octicon octicon-link"></span></a></h2>
-
-<ul>
-<li><p><a href="https://github.com/strazzere/APKfuscator" target="_blank">APK Obfuscator</a> - A generic DEX file obfuscator and munger.</p></li>
-<li><p><a href="https://github.com/Konloch/bytecode-viewer" target="_blank">Bytecode-Viewer</a> - A Java 8 Jar & Android APK Reverse Engineering Suite (Decompiler, Editor, Debugger & More)</p></li>
-<li><p><a href="https://github.com/HamiltonianCycle/ClassNameDeobfuscator" target="_blank">Class Name Deobfuscator</a> - Simple script to parse through the .smali files produced by apktool and extract the .source annotation lines.</p></li>
-<li><p><a href="https://github.com/thuxnder/dalvik-obfuscator" target="_blank">Dalvik Obfuscator</a> - A set of tools/scripts to obfuscate and manipulate dex files</p></li>
-<li><p><a href="https://github.com/CalebFenton/simplify" target="_blank">Simplify</a> - Generic Android Deobfuscator</p></li>
-</ul>
-
-<a id="online-analyzers" class="anchor" href="#online-analyzers" aria-hidden="true"></a>
-<h2><i class="fa fa-globe"></i> Online Analyzers <a href="#online-analyzers"><span class="octicon octicon-link"></span></a></h2>
-
-<ul>
-<li><p><a href="https://androidobservatory.org/" target="_blank">Android Observatory</a> - The Android Observatory is a web interface to a large repository of Android applications. It allows users to search or browse through thousands of Android apps and retrieve metadata for those apps. </p></li>
-<li><p><a href="http://www.decompileandroid.com/" target="_blank">Android APK Decompiler</a> - Decompiling APK files made easy. Online decompiler.</p></li>
-<li><p><a href="http://andrototal.org/" target="_blank">AndroidTotal</a> - AndroTotal is a free service to scan suspicious APKs against multiple mobile antivirus apps.</p></li>
-<li><p><a href="http://anubis.iseclab.org/" target="_blank">Anubis</a> - Malware Analysis for Unknown Binaries.</p></li>
-<li><p><a href="http://www.mobiseclab.org/akana/Intro.html" target="_blank">Akana</a> - Akana is an online Android app Interactive Analysis Enviroment (IAE), which is combined with some plugins for checking the malicious app.</p></li>
-<li><p><a href="http://www.app360scan.com/" target="_blank">App360Scan</a> - Tells about permissons used by an Application and what harm it can cause to users.</p></li>
-<li><p><a href="http://copperdroid.isg.rhul.ac.uk/copperdroid/" target="_blank">CopperDroid</a> - It automatically perform out-of-the-box dynamic behavioral analysis of Android malware.</p></li>
-<li><p><a href="https://dexter.bluebox.com/" target="_blank">Dexter</a> - Dexter is an interactive Android software analysis environment with collaboration features.</p></li>
-<li><p><a href="http://www.mobiseclab.org/eacus.jsp" target="_blank">Eacus</a> - A lite Android app analysis framework</p></li>
-<li><p><a href="http://mobilesandbox.org/" target="_blank">Mobile Sandbox</a> - The Mobile-Sandbox provides static and dynamic malware analysis combined with machine learning techniques for Android applications. </p></li>
-<li><p><a href="http://sanddroid.xjtu.edu.cn/#overview" target="_blank">Sandroid</a> -  An automatic Android application analysis system</p></li>
-<li><p><a href="https://www.virustotal.com/" target="_blank">Virus Total</a> - VirusTotal is a free service that analyzes suspicious files and URLs and facilitates the quick detection of viruses, worms, trojans, and all kinds of malware.</p></li>
-</ul>
-
-<a id="android-testing-distributions" class="anchor" href="#android-testing-distributions" aria-hidden="true"></a>
-<h2><i class="fa fa-rocket"></i> Android Testing Distributions <a href="#android-testing-distributions"><span class="octicon octicon-link"></span></a></h2>
-
-<ul>
-<li><p><a href="https://manifestsecurity.com/appie" target="_blank">Appie</a> - A portable software package for Android Pentesting and an awesome alternative to existing Virtual machines.It is a one stop answer for all the tools needed in Android Application Security Assessment, Android Forensics, Android Malware Analysis.</p></li>
-<li><p><a href="https://androidtamer.com" target="_blank">Android Tamer</a> - Android Tamer is a Virtual / Live Platform for Android Security professionals.</p></li>
-<li><p><a href="https://appsec-labs.com/AppUse/" target="_blank">AppUse</a> - AppUse is a VM (Virtual Machine) developed by AppSec Labs.</p></li>
-<li><p><a href="http://sourceforge.net/projects/mobisec/" target="_blank">Mobisec</a> - 
-Mobile security testing live environment</p></li>
-<li><p><a href="https://www.nowsecure.com/apptesting/community/#viaprotect" target="_blank">Now Secure App Testing Suite:Community Edition</a></p></li>
-<li><p><a href="https://santoku-linux.com/">Santoku Linux</a> - Santoku Linux is a virtual machine developed by NowSecure Mobile.</p></li>
-<li><p><a href="https://github.com/oguzhantopgul/Vezir-Project" target="_blank">Vezir Project</a> - Yet Another Linux Virtual Machine for Mobile Application Pentesting and Mobile Malware Analysis.</p></li>
-</ul>
-
-<a id="android-vulnerable-apps" class="anchor" href="#android-vulnerable-apps" aria-hidden="true"></a>
-<h2><i class="fa fa-bug"></i> Android Vulnerable Apps <a href="#android-vulnerable-apps"><span class="octicon octicon-link"></span></a></h2>
-
-<ul>
-<li><p><a href="https://drive.google.com/folderview?id=0B7rtSe_PH_fTWDQ0RC1DeWVoVUE&amp;usp=sharing" target="_blank">Android Challenges of Various Conferences/Events</a></p></li>
-<li><p><a href="https://github.com/jackMannino/OWASP-GoatDroid-Project" target="_blank">Owasp Goatdroid Project</a></p></li>
-<li><p><a href="http://securitycompass.github.io/AndroidLabs/setup.html" target="_blank">ExploitMe labs by SecurityCompass</a></p></li>
-<li><p><a href="https://github.com/dineshshetty/Android-InsecureBankv2" target="_blank">InsecureBank V2</a></p></li>
-<li><p><a href="https://labs.mwrinfosecurity.com/system/assets/380/original/sieve.apk" target="_blank">Sieve</a>- Sieve is a password manager app, riddled with security vulnerabilities.</p></li>
-</ul>
-
-<a id="android-security-apps" class="anchor" href="#android-security-apps" aria-hidden="true"></a>
-
-<h2><i class="fa fa-user-secret"></i> Android Security Apps <a href="#android-security-apps"><span class="octicon octicon-link"></span></a></h2>
-
-<ul>
-<li><p><a href="https://github.com/SecUpwN/Android-IMSI-Catcher-Detector" target="_blank">Android IMSI-Catcher-Detector</a> - It is an app to detect IMSI-Catchers. IMSI-Catchers are false mobile towers (base stations) acting between the target mobile phone(s) and the real towers of service providers. As such they are considered a Man-In-The-Middle (MITM) attack. In the USA the IMSI-Catcher technology is known under the name "StingRay".</p></li>
-<li><p><a href="http://delhi.securitycompass.com/" target="_blank">Am I Vulnerable</a> - AIV is an Android security app that notifies the user of publicly known vulnerabilities found in the installed version of apps on the device.</p></li>
-
-</ul>
-
-<a id="android-malwares-related" class="anchor" href="#android-malwares-related" aria-hidden="true"></a>
-<h2><i class="fa fa-warning"></i> Android Malwares Related <a href="#android-malwares-related"><span class="octicon octicon-link"></span></a></h2>
-
-<ul>
-<li><p><a href="http://contagiominidump.blogspot.com/" target="_blank">Contagio Mini Dump</a> - Contagio mobile mini-dump offers an upload dropbox for you to share your mobile malware samples.</p></li>
-<li><p><a href="https://code.google.com/p/androguard/wiki/DatabaseAndroidMalwares" target="_blank">Android Malwares Databases</a> - No Longer Maintained.</p></li>
-<li><p><a href="https://github.com/faber03/AndroidMalwareEvaluatingTools" target="_blank">Android Malware Evaluating Tools</a> - Evaluation tools for Android Malwares</p></li>
-<li><p><a href="https://github.com/maldroid/maldrolyzer" target="_blank">Maldrolyzer</a> - Simple framework to extract "actionable" data from Android malware (C&Cs, phone numbers etc.)</p></li>
-</ul>
-
-<a id="tutorials" class="anchor" href="#tutorials" aria-hidden="true"></a>
-<h2><i class="fa fa-university"></i> Tutorials <a href="#tutorials"><span class="octicon octicon-link"></span></a></h2>
-
-<ul>
-<li><p><a href="https://manifestsecurity.com/android-application-security/" target="_blank">Android Application Security Series</a> - A simple and elaborative series on Android Application Security. Beneficial for Android Security Professionals and Developers.</p></li>
-<li><p><a href="http://opensecuritytraining.info/AndroidForensics.html" target="_blank">Android Forensics Course</a></p></li>
-<li><p><a href="https://www.udemy.com/android-hacking-and-penetration-testing/" target="_blank">Android Hacking And Penetration Testing</a> (by <a href="http://www.jsinfosec.com/" target="_blank">JSinfosec</a>)</p></li>
-<li><p><a href="http://opensecuritytraining.info/IntroARM.html" target="_blank">Introduction to ARM</a></p></li>
-<li><a href="http://resources.infosecinstitute.com/author/srinivas/" target="_blank">Android Security Articles By Infosec Institute</a></li>
-<li><a href="https://mariokmk.github.io/programming/2015/03/06/learning-android-bytecode.html" target="_blank">Learning Android Bytecode</a></li>
-</ul>
-
-<a id="android-vulnerability-list" class="anchor" href="#android-vulnerability-list" aria-hidden="true"></a>
-<h2><i class="fa fa-list"></i> Android Vulnerability List <a href="#android-vulnerability-list"><span class="octicon octicon-link"></span></a></h2>
-
-<ul>
-<li><a href="https://docs.google.com/spreadsheet/pub?key=0Am5hHW4ATym7dGhFU1A4X2lqbUJtRm1QSWNRc3E0UlE&amp;single=true&amp;gid=0&amp;output=html" target="_blank">Android Vulnerability/Exploit List</a></li>
-<li><a href="http://www.cvedetails.com/vulnerability-list/vendor_id-1224/product_id-19997/Google-Android.html">Android CVE Details</a></li>
-
-</ul>
-
-<a id="android-security-libraries" class="anchor" href="#android-security-libraries" aria-hidden="true"></a>
-<h2><i class="fa fa-puzzle-piece"></i> Android Security Libraries <a href="#android-security-libraries"><span class="octicon octicon-link"></span></a></h2>
-
-<ul>
-<li><p><a href="https://github.com/zeapo/Android-Password-Store" target="_blank">Android Password Store</a></p></li>
-<li><p><a href="https://github.com/moxie0/AndroidPinning" target="_blank">Android Pinning</a> - A standalone library project for certificate pinning on Android.</p></li>
-<li><p><a href="https://github.com/facebook/conceal" target="_blank">Conceal By Facebook</a> - Conceal provides easy Android APIs for performing fast encryption and authentication of data.</p></li>
-<li><p><a href="http://www.saikoa.com/dexguard" target="_blank">Dexguard</a> - DexGuard is our specialized optimizer and obfuscator for Android. Create apps that are faster, more compact, and more difficult to crack.</p></li>
-<li><p><a href="https://github.com/simbiose/Encryption" target="_blank">Encryption</a> - Encryption is a simple way to create encrypted strings to Android project.</p></li>
-<li><p><a href="https://github.com/commonsguy/cwac-security" target="_blank">CWAC-Security</a> - Helping You Help Your Users Defend Their Data</p></li>
-<li><p><a href="https://github.com/guardianproject/IOCipher" target="_blank">IOCipher</a> - IOCipher is a virtual encrypted disk for apps without requiring the device to be rooted.</p></li>
-<li><p><a href="https://github.com/tozny/java-aes-crypto" target="_blank">Java AES Crypto</a> - A simple Android class for encrypting & decrypting strings, aiming to avoid the classic mistakes that most such classes suffer from.</p></li>
-<li><p><a href="https://github.com/guardianproject/NetCipher" target="_blank">NetCipher</a> - This is an Android Library Project that provides multiple means to improve network security in mobile applications.</p></li>
-<li><p><a href="https://github.com/open-keychain/openpgp-api-lib" target="_blank">OpenPGP API</a> - The OpenPGP API provides methods to execute OpenPGP operations, such as sign, encrypt, decrypt, verify, and more without user interaction from background threads.</p></li>
-<li><p><a href="https://code.google.com/p/owasp-java-html-sanitizer/" target="_blank">OWASP Java HTML Sanitizer</a></p></li>
-<li><p><a href="http://proguard.sourceforge.net/" target="_blank">Proguard</a> - ProGuard is a free Java class file shrinker, optimizer, obfuscator, and preverifier. It detects and removes unused classes, fields, methods, and attributes.</p></li>
-<li><p><a href="https://github.com/rtyley/spongycastle" target="_blank">Spongy Castle</a> - a repackage of Bouncy Castle for Android</p></li>
-<li><p><a href="https://www.zetetic.net/sqlcipher/sqlcipher-for-android/" target="_blank">SQL Cipher</a> - SQLCipher is an open source extension to SQLite that provides transparent 256-bit AES encryption of database files.</p></li>
-<li><p><a href="https://github.com/scottyab/secure-preferences" target="_blank">Secure Preferences</a> - Android Shared preference wrapper than encrypts the keys and values of Shared Preferences.</p></li>
-<li><p><a href="https://github.com/guardianproject/TrustedIntents" target="_blank">Trusted Intents</a> - Library for flexible trusted interactions between Android apps</p></li>
-</ul>
-
-<a id="best-practices" class="anchor" href="#best-practices" aria-hidden="true"></a>
-<h2><i class="fa fa-thumbs-up"></i> Best Practices <a href="#best-practices"><span class="octicon octicon-link"></span></a></h2>
-
-<ul>
-<li><a href="http://source.android.com/devices/tech/security/" target="_blank">Android Security Overview</a></li>
-<li><a href="http://developer.android.com/training/articles/security-tips.html" target="_blank">Android Security Tips for Developers</a></li>
-<li><a href="https://www.owasp.org/index.php/Projects/OWASP_Mobile_Security_Project_-_Top_Ten_Mobile_Controls" target="_blank">Projects/OWASP Mobile Security Project - Top Ten Mobile Controls</a></li>
-<li><a href="https://www.pcisecuritystandards.org/documents/Mobile%20Payment%20Security%20Guidelines%20v1%200.pdf" target="_blank">PCI Mobile Payment Acceptance
-Security Guidelines for Developers</a></li>
-<li><a href="https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=111509535" target="_blank">Secure Coding in Android</a></li>
-</ul>
-
-<a id="books" class="anchor" href="#books" aria-hidden="true"></a>
-<h2><i class="fa fa-book"></i> Books <a href="#books"><span class="octicon octicon-link"></span></a></h2>
-
-<table>
-<thead>
-<tr>
-<th>Book</th>
-<th>Year</th>
-<th>Author</th>
-<th>Link</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Exploring Security Enhancements for Android </td>
-<td>2015</td>
-<td>William Confer, William Roberts</td>
-<td><a href="http://www.amazon.com/dp/1784390593/ref=cm_sw_r_tw_dp_mYx9ub048XC4Z" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>The Mobile Application Hacker's Handbook</td>
-<td>2015</td>
-<td>Dominic Chell, Tyrone Erasmus, Jon Lindsay, Shaun Colley, Ollie Whitehouse</td>
-<td><a href="http://www.amazon.com/The-Mobile-Application-Hackers-Handbook/dp/1118958500" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Android Hacker's Handbook</td>
-<td>2014</td>
-<td>Joshua J. Drake, Zach Lanier, Collin Mulliner, Pau Oliva, Stephen A. Ridley, Georg Wicherski</td>
-<td><a href="http://www.amazon.com/Android-Hackers-Handbook-Joshua-Drake/dp/111860864X" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Android Security Internals</td>
-<td>2014</td>
-<td>Nikolay Elenkov</td>
-<td><a href="http://www.nostarch.com/androidsecurity" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Android Malware And Analysis</td>
-<td>2014</td>
-<td>Shane Hartman, Ken Dunham, Manu Quintans, Jose Andre Morales, Tim Strazzere</td>
-<td><a href="http://www.amazon.com/Android-Malware-Analysis-Ken-Dunham/dp/1482252198" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Learning Pentesting for Android</td>
-<td>2014</td>
-<td>Aditya Gupta</td>
-<td><a href="http://www.amazon.in/Learning-Pentesting-Android-Aditya-Gupta/dp/1783288981" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Android Security Cookbook</td>
-<td>2013</td>
-<td>Keith Makan, Scott-Alexander-Brown</td>
-<td><a href="http://www.amazon.com/dp/1782167161/?tag=packtpubli-20" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Android Malware</td>
-<td>2013</td>
-<td>Xuxian Jiang, Yajin Zhou</td>
-<td><a href="http://www.amazon.com/Android-Malware-SpringerBriefs-Computer-Science/dp/1461473934/" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Android Application Security Essentials</td>
-<td>2013</td>
-<td>Pragati Rai</td>
-<td><a href="http://www.amazon.com/Android-Application-Security-Essentials-Pragati/dp/1849515603/" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Hacking Exposed Mobile Security Secrets &amp; Solutions</td>
-<td>2013</td>
-<td>Neil Bergman, Mike Stanfield, Jason Rouse, Joel Scrambay, Sarath Geethakumar, Swapnil Deshmukh, John Steven, Mike Price, Scott Matsumoto</td>
-<td><a href="http://www.amazon.com/Hacking-Exposed-Security-Secrets-Solutions/dp/0071817018/" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Android Security: Attacks and Defenses</td>
-<td>2013</td>
-<td>Anmol Misra, Abhishek Dubey</td>
-<td><a href="http://www.amazon.com/Android-Security-Defenses-Anmol-Misra/dp/1439896461/" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Mobile Phone Security and Forensics: A Practical Approach</td>
-<td>2012</td>
-<td>I.I. Androulidakis</td>
-<td><a href="http://www.amazon.com/Mobile-Phone-Security-Forensics-SpringerBriefs/dp/1461416493/" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Android Apps Security</td>
-<td>2012</td>
-<td>Sheran Gunasekera</td>
-<td><a href="http://www.amazon.com/Android-Apps-Security-Sheran-Gunasekera/dp/1430240628" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Decompiling Android</td>
-<td>2012</td>
-<td>Godfrey Nolan</td>
-<td><a href="http://www.amazon.com/Decompiling-Android-Godfrey-Nolan/dp/1430242485/" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Mobile Application Security</td>
-<td>2012</td>
-<td>Himanshu Dwivedi, Chris Clark and David Thiel</td>
-<td><a href="http://www.amazon.com/Mobile-Application-Security-Himanshu-Dwivedi/dp/0071633561/" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>XDA Developers' Android Hacker's Toolkit</td>
-<td>2012</td>
-<td>Jason Tyler, Will Verduzco</td>
-<td><a href="http://www.amazon.com/XDA-Developers-Android-Hackers-Toolkit/dp/1119951380/" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Android Forensics: Investigation, Analysis and Mobile Security for Google Android'</td>
-<td>2011</td>
-<td>Andrew Hoog</td>
-<td><a href="http://www.amazon.com/Android-Forensics-Investigation-Analysis-Security/dp/1597496510/" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Application Security for the Android Platform: Processes, Permissions, and Other Safeguards</td>
-<td>2011</td>
-<td>Jeff Six</td>
-<td><a href="http://www.amazon.com/Application-Security-Android-Platform-Permissions/dp/1449315070/" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Embedded Java Security: Security for Mobile Devices</td>
-<td>2010</td>
-<td>Mourad Debbabi, Mohamed Saleh, Chamseddine Talhi and Sami Zhioua</td>
-<td><a href="http://www.amazon.com/Embedded-Java-Security-Mobile-Devices/dp/1849966230/" target="_blank">Link</a></td>
-</tr>
-</tbody>
-</table>
-
-<a id="android-security-research-papers" class="anchor" href="#android-security-research-papers" aria-hidden="true"></a>
-<h2><i class="fa fa-newspaper-o"></i> Android Security Research Papers <a href="#android-security-research-papers"><span class="octicon octicon-link"></span></a></h2>
-
-<ul>
-<li><a href="https://www.usenix.org/system/files/conference/woot14/woot14-kaplan.pdf" target="_blank">ATTACKING THE LINUX PRNG ON ANDROID</a></li>
-<li><a href="http://www.quarkslab.com/dl/Android-OEM-applications-insecurity-and-backdoors-without-permission.pdf" target="_blank">Android OEM's applications (in)security and backdoors without permission</a></li>
-<li><a href="http://www.cis.syr.edu/%7Ewedu/Research/paper/clipboard_attack_dimva2014.pdf" target="_blank">Attacks on Android Clipboard</a></li>
-<li><a href="http://www.cs.rice.edu/%7Esc40/pubs/enck-sec11.pdf" target="_blank">A Study of Android Application Security</a></li>
-<li><a href="http://www.cis.syr.edu/%7Ewedu/Research/paper/webview_acsac2011.pdf" target="_blank">Attacks on Webview in the Android System</a></li>
-<li><a href="https://www.sba-research.org/wp-content/uploads/publications/ndss2012_final.pdf" target="_blank">Gues who's is Texting you?Evaluating Security of Smartphone Messaging Applications</a></li>
-<li><a href="http://arxiv.org/ftp/arxiv/papers/1502/1502.04870.pdf" target="_blank">Evaluations of Security Solutions for Android Systems</a></li>
-<li><a href="http://www2.dcsec.uni-hannover.de/files/android/p50-fahl.pdf" target="_blank">Why Eve and Mallory Love Android:
-An Analysis of Android SSL (In)Security</a></li>
-<li><a href="https://www.cs.ncsu.edu/faculty/jiang/pubs/CCS13.pdf" target="_blank">The Impact of Vendor Customizations on Android Security</a></li>
-<li><a href="http://www.cs.indiana.edu/%7Ezhou/files/sp14_zhou.pdf" target="_blank">The Peril of Fragmentation: Security Hazards in
-Android Device Driver Customizations</a></li>
-<li><a href="http://www.cs.ucsb.edu/%7Echris/research/doc/ccs13_cryptolint.pdf" target="_blank">An Empirical Study of Cryptographic Misuse
-in Android Applications</a></li>
-<li><a href="http://www.guanotronic.com/%7Eserge/papers/soups12-android.pdf" target="_blank">Android Permissions:User Attention, Comprehension, and Behavior</a></li>
-<li><a href="http://www.cs.northwestern.edu/%7Eychen/Papers/AppsPlayground.pdf" target="_blank">AppsPlayground: Automatic Security Analysis of
-Smartphone Applications</a></li>
-<li><a href="http://users.encs.concordia.ca/%7Eclark/papers/2012_spsm.pdf" target="_blank">Understanding and Improving App Installation Security
-Mechanisms through Empirical Analysis of Android</a></li>
-<li><a href="https://www.incibe.es/extfrontinteco/img/File/intecocert/EstudiosInformes/android_malware_situation.pdf" target="_blank">Android Malware Situation</a></li>
-<li><a href="http://arxiv.org/pdf/1502.03182v2" target="_blank">PowerSpy: Location Tracking using Mobile Device Power Analysis</a></li>
-<li><a href="http://yinzhicao.org/EdgeMiner/2015_ndss_edgeminer.pdf" target="_blank">EdgeMiner: Automatically Detecting Implicit
-Control Flow Transitions through the Android Framework</a></li>
-<li><a href="http://www.yajin.org/papers/ndss13_contentscope.pdf" target="_blank">Detecting Passive Content Leaks and Pollution in Android Applications </a></li>
-<li><a href="http://www.yajin.org/papers/codaspy14_divilar.pdf" target="_blank">DIVILAR: Diversifying Intermediate Language for Anti-Repackaging on Android Platform </a></li>
-<li><a href="http://www.csc.ncsu.edu/faculty/jiang/pubs/MOBISYS12.pdf" target="_blank"> RiskRanker: Scalable and Accurate Zero-day Android Malware Detection</a></li>
-<li><a href="http://www.csc.ncsu.edu/faculty/jiang/pubs/CODASPY12.pdf" target="_blank">DroidMOSS: Detecting Repackaged Smartphone Applications in Third-Party Android Marketplaces</a></li>
-<li><a href="http://www.yajin.org/papers/oakland12_sok.pdf" target="_blank">Dissecting Android Malware: Characterization and Evolution</a></li>
-<li><a href="http://www.csc.ncsu.edu/faculty/jiang/pubs/NDSS12_DROIDRANGER.pdf" target="_blank">Hey, You, Get off of My Market: Detecting Malicious Apps in Official and Alternative Android Markets</a></li>
-<li><a href="http://www.csc.ncsu.edu/faculty/jiang/pubs/NDSS12_WOODPECKER.pdf" target="_blank">Systematic Detection of Capability Leaks in Stock Android Smartphones</a></li>
-<li><a href="http://www.csc.ncsu.edu/faculty/jiang/pubs/CODASPY13.pdf" target="_blank">Fast, Scalable Detection of “Piggybacked” Mobile
-Applications</a></li>
-<li><a href="https://www.virusbtn.com/pdf/conference/vb2014/VB2014-Panakkal.pdf" target="_blank">Leaving our ZIP undone: how to abuse ZIP to deliver malware apps</a></li>
-</ul>
-
-<a id="security-overview" class="anchor" href="#security-overview" aria-hidden="true"></a>
-<h2><i class="fa fa-key"></i> Security Overview <a href="#security-overview"><span class="octicon octicon-link"></span></a></h2>
-
-<ul>
-<li><a href="https://source.android.com/devices/tech/security/enhancements/enhancements50.html" target="_blank">Security Enhancements in Android 5.0</li>
-<li><a href="https://source.android.com/devices/tech/security/enhancements/enhancements44.html" target="_blank">Security Enhancements in Android 4.4</li>
-<li><a href="https://source.android.com/devices/tech/security/enhancements/enhancements43.html" target="_blank">Security Enhancements in Android 4.3</li>
-<li><a href="https://source.android.com/devices/tech/security/enhancements/enhancements42.html" target="_blank">Security Enhancements in Android 4.2</li>
-<li><a href="https://source.android.com/devices/tech/security/enhancements/enhancements41.html" target="_blank">Security Enhancements in Android 1.5 through Android 4.1</li>
-<li><a href="https://androidtamer.com/android-security-enhancements/" target="_blank">Android Security Enhancements</a></li>
-<li><a href="http://opensecurity.in/research/security-analysis-of-android-browsers.html" target="_blank">Android Browsers Static Security Analysis</a></li>
-</ul>
-
-<a id="presentations" class="anchor" href="#presentations" aria-hidden="true"></a>
-<h2><i class="fa fa-video-camera"></i> Presentations <a href="#presentations"><span class="octicon octicon-link"></span></a></h2>
-
-<table>
-<thead>
-<tr>
-<th>Presentation</th>
-<th>Conference</th>
-<th>Year</th>
-<th>Author</th>
-<th>Link</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>The nightmare behind the cross platform mobile apps dream</td>
-<td>Blackhat Asia</td>
-<td>2015</td>
-<td>Marco Grassi, Sebastian Guerrero</td>
-<td><a href="https://speakerdeck.com/marcograss/the-nightmare-behind-the-cross-platform-mobile-apps-dream" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>DABid: The Powerful Interactive Android Debugger for Android Malware Analysis</td>
-<td>Blackhat Asia </td>
-<td>2015</td>
-<td></td>
-<td><a href="https://www.blackhat.com/docs/asia-15/materials/asia-15-Jung-DABiD-The-Powerful-Interactive-Android-Debugger-For-Android-Malware-Analysis.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Resurrecting	The	READ_LOGS	Permission On Samsung	Devices	</td>
-<td>Blackhat Asia</td>
-<td>2015</td>
-<td>Ryan Johnson, Angelos Stavrou</td>
-<td><a href="https://www.blackhat.com/docs/asia-15/materials/asia-15-Johnson-Resurrecting-The-READ-LOGS-Permission-On-Samsung-Devices.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>We Can still Crack you</td>
-<td>Blackhat Asia</td>
-<td>2015</td>
-<td></td>
-<td><a href="https://www.blackhat.com/docs/asia-15/materials/asia-15-Park-We-Can-Still-Crack-You-General-Unpacking-Method-For-Android-Packer-No-Root.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Relaying contactless EMV transactions with off-the-self hardware</td>
-<td>Blackhat Asia</td>
-<td>2015</td>
-<td></td>
-<td><a href="https://www.blackhat.com/docs/asia-15/materials/asia-15-VandenBreekel-Relaying-EMV-Contactless-Transactions-Using-Off-The-Shelf-Android-Devices.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Hiding behind ART</td>
-<td>Blackhat Asia</td>
-<td>2015</td>
-<td>Paul Sebanal</td>
-<td><a href="https://www.blackhat.com/docs/asia-15/materials/asia-15-Sabanal-Hiding-Behind-ART-wp.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Watch you lookin’ at? </td>
-<td>Securi-Tay</td>
-<td>2015</td>
-<td>Jahmel Harris & Owen Evans</td>
-<td><a href="https://labs.mwrinfosecurity.com/system/assets/886/original/WatchYouLookinAt_SecuriTay2015_presentation_web.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>On Relaying NFC Payment Transactions using Android devices</td>
-<td>RootedCon </td>
-<td>2015</td>
-<td>Ricardo J. Rodríguez y & José Vila </td>
-<td><a href="http://www.slideshare.net/cgvwzq/on-relaying-nfc-payment-transactions-using-android-devices" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Android: Back to the Future, Two or Too</td>
-<td>RootedCon</td>
-<td>2015</td>
-<td>Raúl Siles</td>
-<td><a href="http://www.dinosec.com/docs/Android-Back_to_the_Future_Too_Rooted2015_RaulSiles-DinoSec_v1.0.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Understanding IMSI Privacy </td>
-<td>BlackHat USA</td>
-<td>2015</td>
-<td> Ravishankar Borgaonkar & Swapnil Udar</td>
-<td><a href="https://www.isti.tu-berlin.de/fileadmin/fg214/ravi/Darshak-bh14.pdf" target="_blank">Link</a></td>
-</tr>
-</tr>
-<tr>
-<td>Android FakeID Vulnerability Wwalkthrough</td>
-<td>BlackHat USA </td>
-<td>2015</td>
-<td>Jeff Forrista</td>
-<td><a href="https://www.blackhat.com/docs/us-14/materials/us-14-Forristal-Android-FakeID-Vulnerability-Walkthrough.pdf" target="_blank">Link</a></td>
-</tr>
-</tr>
-<tr>
-<td>Reflection On Trusting Trustzone</td>
-<td>BlackHat USA</td>
-<td>2015</td>
-<td>Dan Rosenberg</td>
-<td><a href="https://www.blackhat.com/docs/us-14/materials/us-14-Rosenberg-Reflections-on-Trusting-TrustZone.pdf" target="_blank">Link</a></td>
-</tr>
-</tr>
-<tr>
-<td>Researching Android Device Security With The Help Of A Droid Army</td>
-<td>BlackHat USA</td>
-<td>2015</td>
-<td>Joshua Drake</td>
-<td><a href="https://www.blackhat.com/docs/us-14/materials/us-14-Drake-Researching-Android-Device-Security-With-The-Help-Of-A-Droid-Army.pdf" target="_blank">Link</a></td>
-</tr>
-</tr>
-<tr>
-<td>MyY Google Glass Sees Your Passwords!</td>
-<td>BlackHat USA</td>
-<td>2015</td>
-<td>Xinwen Fu & Qinggang Yue & Zhen Ling</td>
-<td><a href="https://www.blackhat.com/docs/us-14/materials/us-14-Fu-My-Google-Glass-Sees-Your-Passwords.pdf" target="_blank">Link</a></td>
-</tr>
-</tr>
-<tr>
-<td>Cellular Exploitation On A Global Scale: The Rise And Fall Of The Ccontrol Protocol </td>
-<td>BlackHat USA</td>
-<td>2015</td>
-<td>Mathew Solnik & Marc Blanchou</td>
-<td><a href="https://www.blackhat.com/docs/us-14/materials/us-14-Solnik-Cellular-Exploitation-On-A-Global-Scale-The-Rise-And-Fall-Of-The-Control-Protocol.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Android FakeId Vulnerability</td>
-<td>Blackhat</td>
-<td>2014</td>
-<td>Jeff Forristal</td>
-<td><a href="https://bluebox.com/technical/blackhat-fake-id-talk-material-and-follow-up/" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Mobile Analysis Kung Fu, Santoku Style</td>
-<td>RSA Conference</td>
-<td>2014</td>
-<td>Andrew Hoog & Sebastián Guerrero</td>
-<td><a href="http://www.rsaconference.com/writable/presentations/file_upload/anf-w03-mobile-analysis-kung-fu-santoku-style_v2.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Beginners Guide to Reverse Engineering Android Apps</td>
-<td>RSA Conference</td>
-<td>2014</td>
-<td>Pau Oliva Fora</td>
-<td><a href="http://www.rsaconference.com/writable/presentations/file_upload/stu-w02b-beginners-guide-to-reverse-engineering-android-apps.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Touchlogger on iOS and Android</td>
-<td>RSA Conference</td>
-<td>2014</td>
-<td>Neal Hindocha & Nathan McCauley</td>
-<td><a href="http://www.rsaconference.com/writable/presentations/file_upload/mbs-w01-touchlogger-on-ios-and-android-v2.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Predatory Hacking of Mobile: Real Demos </td>
-<td>RSA Conference</td>
-<td>2014</td>
-<td>Jeff Forristal</td>
-<td><a href="http://www.rsaconference.com/writable/presentations/file_upload/mbs-w03-predatory-hacking-of-mobile-real-demos-v2.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Reverse Engineering, Pentesting and Hardening of Android Apps</td>
-<td>DroidCon</td>
-<td>2014</td>
-<td>Marco Grassi</td>
-<td><a href="https://speakerd.s3.amazonaws.com/presentations/25bc54e0728001318b20063debaef239/DroidconIT2014.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>DREBIN: Effective and Explainable Detection of Android Malware in Your Pocket</td>
-<td>NDSS</td>
-<td>2014</td>
-<td>Daniel Arp, Michael Spreitzenbarth, Malte Hubner, Hugo Gascon & Konrad Rieck</td>
-<td><a href="http://filepool.informatik.uni-goettingen.de/publication/sec//2014-ndss.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Execute This! Analyzing Unsafe and Malicious Dynamic Code Loading in Android Applications </td>
-<td>NDSS</td>
-<td>2014</td>
-<td>Sebastian Poeplau, Yanick Fratantonio, Antonio Bianchi, Christopher Kruegel, Giovanni Vigna</td>
-<td><a href="https://anonymous-proxy-servers.net/paper/android-remote-code-execution.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>AppSealer: Automatic Generation of Vulnerability-Specific Patches for Preventing Component Hijacking Attacks in Android Applications</td>
-<td>NDSS</td>
-<td>2014</td>
-<td>Mu Zhang, Heng Yin</td>
-<td><a href="http://sycurelab.ecs.syr.edu/%7Emu/AppSealer-ndss14.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>SMV-Hunter: Large Scale, Automated Detection of SSL/TLS Man-in-the-Middle Vulnerabilities in Android Apps</td>
-<td>NDSS</td>
-<td>2014</td>
-<td>David Sounthiraraj, Justin Sahs, Zhiqiang Lin, Latifur Khan, Garrett Greenwood</td>
-<td><a href="https://www.utdallas.edu/%7Ezxl111930/file/NDSS14b.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>AirBag: Boosting Smartphone Resistance to Malware Infection</td>
-<td>NDSS</td>
-<td>2014</td>
-<td>Chiachih Wu, Yajin Zhou, Kunal Patel, Zhenkai Liang, Xuxian Jiang</td>
-<td><a href="http://yajin.org/papers/ndss14_airbag.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Pre-installed Android application poisoning</td>
-<td>AppSecAsiaPac</td>
-<td>2014</td>
-<td>Yoshitaka Kato</td>
-<td><a href="https://speakerdeck.com/owaspjapan/pre-installed-android-application-poisoning-number-appsecapac2014" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Rage Against the Virtual Machine: Hindering Dynamic Analysis of Android Malware</td>
-<td>EuroSec</td>
-<td>2014</td>
-<td>Thanasis Petsas, Giannis Voyatzis, Elias Athanasopoulos, Sotiris Ioannidis, Michalis Polychronakis </td>
-<td><a href="http://www.syssec-project.eu/m/documents/eurosec14/RATVM.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Pentesting Android Applications</td>
-<td>Confraria Segurança PT</td>
-<td>2014</td>
-<td>Cláudio André</td>
-<td><a href="http://www.slideshare.net/clviper/pentesting-android-applications" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Tricks for image handling in Android</td>
-<td>DroidCon Berlin</td>
-<td>2014</td>
-<td>Tyrone Nicholas</td>
-<td><a href="http://www.slideshare.net/tyronenicholas/devoxx-images-android" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Post-Mortem Memory Analysis of Cold-Booted Android Devices</td>
-<td>IMF</td>
-<td>2014</td>
-<td>Christian Hilgers, Holger Macht, Tilo Muller, Michael Spreitzenbarth</td>
-<td><a href="http://www.homac.de/publications/Post-Mortem-Memory-Analysis-of-Cold-Booted-Android-Devices-slides.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Execute this! Looking into code-loading techniques on Android</td>
-<td>Honeynet Project Workshop </td>
-<td>2014</td>
-<td>Sebastian Poeplau, Yanick Fratantonio, Antonio Bianchi, Christopher Kruegel, Giovanni Vigna</td>
-<td><a href="http://warsaw2014.honeynet.org/slides/honeynet2014-day1-Sebastian.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Exploiting the Bells and Whistles: Uncovering OEM Vulnerabilities in Android</td>
-<td>CarolinaCon</td>
-<td>2014</td>
-<td>Jake Valletta</td>
-<td><a href="http://thecobraden.com/uploads/Valletta%20-%20CarolinaCon%20X%20-%20Exploiting%20the%20Bells%20and%20Whistles.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Enter Sandbox: Android Sandbox Comparison</td>
-<td>MOBILE SECURITY TECHNOLOGIES</td>
-<td>2014</td>
-<td>Sebastian Neuner, Victor van der Veen, Martina Lindorfer, Markus Huber, Georg Merzdovnik, Martin Mulazzani and Edgar Weipp</td>
-<td><a href="http://mostconf.org/2014/slides/s3p1-slides.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>A Systematic Security Evaluation of Android's Multi-User Framework</td>
-<td>MOBILE SECURITY TECHNOLOGIES</td>
-<td>2014</td>
-<td>Paul Ratazzi, Yousra Aafer, Amit Ahlawat, Hao Hao, Yifei Wang and Wenliang Du</td>
-<td><a href="http://mostconf.org/2014/slides/s3p3-slides.pptx" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Sprobes: Enforcing Kernel Code Integrity on the TrustZone Architecture</td>
-<td>MOBILE SECURITY TECHNOLOGIES</td>
-<td>2014</td>
-<td>Xinyang Ge, Hayawardh Vijayakumar and Trent Jaeger</td>
-<td><a href="http://mostconf.org/2014/slides/s2p3-slides.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Android Packers:Separating from the pack </td>
-<td>Hacktivity</td>
-<td>2014</td>
-<td>Ruchna Nigam</td>
-<td><a href="http://www.fortiguard.com/paper/Android-Packers--Hacktivity2014/" target="_blank">Link</a></td>
-</tr>
-</tr>
-</tr>
-<tr>
-<td>ASM: A Programmable Interface for Extending Android Security</td>
-<td>23rd USENIX Security Symposium </td>
-<td>2014</td>
-<td>Stephan Heuser, Adwait Nadkarni, William Enck, Ahmad-Reza Sadeghi </td>
-<td><a href="https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-heuser.pdf" target="_blank">Link</a></td>
-</tr>
-</tr>
-<tr>
-<td>Peeking into Your App without Actually Seeing it: UI State Inference and Novel Android Attacks</td>
-<td>23rd USENIX Security Symposium</td>
-<td>2014</td>
-<td>Qi Alfred Chen, Zhiyun Qian, Z. Morley Mao</td>
-<td><a href="https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-chen.pdf" target="_blank">Link</a></td>
-</tr>
-</tr>
-<tr>
-<td>On the Feasibility of Automa3cally Generating Android Component Hijacking Exploits</td>
-<td>Hitcon</td>
-<td>2014</td>
-<td>Wu Daoyuan</td>
-<td><a href="http://hitcon.org/2014/downloads/P1_09_Daoyuan%20Wu%20-%20On%20the%20Feasibility%20of%20Automatically%20Generating%20Android%20Component%20Hijacking%20Exploits.pdf" target="_blank">Link</a></td>
-</tr>
-</tr>
-<tr>
-<td>Play Flappy Bird while you pentest Android in style</td>
-<td>Hitcon</td>
-<td>2014</td>
-<td>Chris Liu & Matthew Lionetti</td>
-<td><a href="http://hitcon.org/2014/downloads/P1_10_Chris%20Liu%20-%20Matthew%20Lionetti%20-%20TackyDroid%20Slides.pptx" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Bypassing wifi pay-walls with Android</td>
-<td>RootedCon</td>
-<td>2014</td>
-<td>Pau Oliva Fora </td>
-<td><a href="http://www.slideshare.net/rootedcon/pau-olivafora-rootedcon2014" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>A distributed approach to malware analysis</td>
-<td>BruCON 0x06</td>
-<td>2014</td>
-<td>Daan Raman</td>
-<td><a href="https://speakerdeck.com/nviso/a-distributed-approach-to-malware-analysis-brucon-0x06-daan-raman" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Enter The Snapdragon!</td>
-<td>Hacktivity</td>
-<td>2014</td>
-<td>Daniel Komaromy</td>
-<td><a href="https://www.hacktivity.com/en/downloads/archives/319/" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Android Forensics: The Joys of JTAG</td>
-<td>Ruxcon</td>
-<td>2014</td>
-<td>tty0x80</td>
-<td><a href="https://ruxcon.org.au/assets/2014/slides/tty0x80-Ruxcon%20Presentation-12th-October-2014-for-release.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>TACKYDROID: Pentesting Android Applications in Style </td>
-<td>HiTB KUL</td>
-<td>2014</td>
-<td>Chris Liu & Matthew Lionetti</td>
-<td><a href="http://conference.hitb.org/hitbsecconf2014kul/materials/D2T2%20-%20Chris%20Liu%20and%20Matthew%20Lionetti%20-%20TackyDroid.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>BREAKING “SECURE” MOBILE APPLICATIONS </td>
-<td>HiTB KUL</td>
-<td>2014</td>
-<td>Dominic Chell</td>
-<td><a href="http://conference.hitb.org/hitbsecconf2014kul/materials/D2T1%20-%20Dominic%20Chell%20-%20Breaking%20Secure%20Mobile%20Applications.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Hide Android Applications in Images</td>
-<td>BlackHat Europe</td>
-<td>2014</td>
-<td>Axelle Apvrille & Ange Albertini</td>
-<td><a href="https://www.blackhat.com/docs/eu-14/materials/eu-14-Apvrille-Hide-Android-Applications-In-Images.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>MAN IN THE BINDER: HE WHO CONTROLS IPC, CONTROLS THE DROID</td>
-<td>BlackHat Europe</td>
-<td>2014</td>
-<td>Nitay Artenstein & Idan Revivo</td>
-<td><a href="https://www.blackhat.com/docs/eu-14/materials/eu-14-Artenstein-Man-In-The-Binder-He-Who-Controls-IPC-Controls-The-Droid.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Mobile Hacking – Reverse Engineering the Android OS</td>
-<td>HackerHalted</td>
-<td>2014</td>
-<td>Tom Updegrove</td>
-<td><a href="http://www.slideshare.net/EC-Council/hacker-halted-2014-reverse-engineering-the-android-os" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Making Android's Bootable Recovery Work For You</td>
-<td>EkoParty</td>
-<td>2014</td>
-<td>Drew Suarez at EkoParty</td>
-<td><a href="http://matasano.com/research/eko2014_recovery.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>An Infestation of Dragons: Exploring Vulnerabilities in the ARM TrustZone Architecture</td>
-<td>PacSec Japan</td>
-<td>2014</td>
-<td>Josh "m0nk" Thomas, Charles Holmes & Nathan Keltner</td>
-<td><a href="https://pacsec.jp/psj14/PSJ2014_Josh_PacSec2014-v1.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Hey, we catch you - dynamic analysis of Android applications</td>
-<td>PacSec Japan</td>
-<td>2014</td>
-<td>Wenjun Hu</td>
-<td><a href="https://pacsec.jp/psj14/PSJ2014_Wenjun_Hey-%20We%20Catch%20You%20-%20Dynamic%20Analysis%20of%20Android%20Applications.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Steroids for your App Security Assessment </td>
-<td>ZeroNights</td>
-<td>2014</td>
-<td>Marco Grassi</td>
-<td><a href="http://2014.zeronights.org/assets/files/slides/grassi.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Racing with DROIDS</td>
-<td>ZeroNights</td>
-<td>2014</td>
-<td> Peter Hlavaty</td>
-<td><a href="http://2014.zeronights.org/assets/files/slides/racingwithdroids.pdf" target="_blank">Link</a></td>
-</tr>
-<tr>
-<td>Creating a kewl and simple Cheating Platform on Android</td>
-<td>DeepSec</td>
-<td>2014</td>
-<td>Milan Gabor & Danijel Grah</td>
-<td><a href="https://deepsec.net/docs/Slides/2014/Creating_a_kewl_and_simple_Cheating_Platform_on_Android_-_Milan_Gabor-Danijel_Grah.pdf" target="_blank">Link</a></td>
-</tr>
-</tbody>
-</table>
-
-<a id="contribute" class="anchor" href="#contribute" aria-hidden="true"></a>
-<h2><i class="fa fa-github"></i> Contribute <a href="#contribute"><span class="octicon octicon-link"></span></a></h2>
-
-<p>It is awesome to see that you want to contribute in this wiki, which would directly help the community. Project/Tools which are no longer maintained are not included in this wiki. List of awesome contributors to this wiki is given below. Please follow one of the ways from below to include tool or resource in this wiki-</p>
-
-<ul>
-<li><p>Tweet the resource to <a href="https://twitter.com/exploitprotocol" target="_blank">@exploitprotocol</a></p></li>
-<li><p>Shoot an email to <strong><a href="mailto:aditya@manifestsecurity.com">aditya@manifestsecurity.com</a></strong></p></li>
-<li><p>Create a pull request or an issue to <a href="https://github.com/exploitprotocol/android-security-wiki/tree/gh-pages" target="_blank">Android Security Wiki Repository</a> gh-pages branch. Please add content in index.html in gh-pages branch if creating an pull request.</p></li>
-</ul>
-
-<p>Please let me know if you have any suggestions</p>
-
-<p>Below is the list of awesome people who contributed to this wiki.</p>
-<ul>
-<li><a href="https://twitter.com/c0d3xpl0it" target="_blank">Pralhad Chaskar</a></li>
-<li><a href="http://anantshri.info" target="_blank">Anant Shrivastava</a></li>
-<li><a href="">Michael Freeman</a></li>
-<li><a href="">Esteban</a></li>
-<li><a href="http://prakharbhardwaj.in/" target="_blank">Prakhar Bhardwaj</a></li>
-<li><a href="https://www.facebook.com/thomas.blessen" target="_blank">Blessen Thomas</a></li>
-<li><a href="https://twitter.com/hslatman" target="_blank">Herman Slatman</a></li>
-<li><a href="http://delhi.securitycompass.com" target="_blank">Abhineet Jayaraj</a></li>
-<li><a href="https://www.blackhat.com/eu-14/speakers/Sagi-Kedmi.html" target="_blank">Sagi Kedmi</a></li>
-<li><a href="http://in.linkedin.com/in/ankitsrivastav9nov" target="_blank">Ankit Kumar</a></li>
-<li><a href="http://www.parbhatpuri.com/" target="_blank">Parbhat Puri</a></li>
-<li><a href="https://blog.fortinet.com/author/ruchna-nigam" target="_blank">Ruchna Nigam</a></li>
-<li><a href="https://twitter.com/Abhinav_Sejpal" target="_blank">Abhinav Sejpal</a></li>
-<li><a href="https://twitter.com/specter_labs" target="_blank">Shane Hartman</a></li>
-<li><a href="https://twitter.com/h3xstream" target="_blank">Philippe Arteau</a></li>
-</ul>
-      </section>
-     
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-60251920-1', 'auto');
-  ga('send', 'pageview');
-
-  </script>
-<script>
-  window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
 </script>
 
-  </body>
+   </body>
 </html>

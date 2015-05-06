@@ -693,7 +693,7 @@ header p {
   z-index: 100;
   left: 0;
   right: 50%;
-  height: 50px;
+  padding-bottom:8px; 
   margin-right: -482px;
   position: fixed;
   top: 115px;
@@ -710,6 +710,7 @@ header p {
   -khtml-border-radius: 0px 2px 2px 0px;
   border-radius: 0px 2px 2px 0px;
   padding-right: 10px;
+  padding-left: 70px;
 }
 #banner .button {
   border: 1px solid #dba500;
@@ -916,7 +917,9 @@ footer {
   body {
     word-wrap: break-word;
   }
-
+  #space_section{
+    display: none;
+  }
   header {
     padding: 20px 20px;
     margin: 0;
@@ -945,7 +948,6 @@ footer {
   }
 
   section {
-    margin-top: 130px;
     margin-bottom: 0px;
     width: auto;
   }
@@ -970,11 +972,13 @@ footer {
   }
 
   section {
-    margin-top: 5px;
+    margin-top: 140px;
   }
 
   #banner {
-    display: none;
+    top: 60px;
+    position: absolute;
+    display: block;
   }
 
   header ul {

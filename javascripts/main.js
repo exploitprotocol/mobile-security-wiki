@@ -13,20 +13,12 @@ var sectionHeight = function() {
 $(window).resize(sectionHeight);
 
 $(document).ready(function(){
-  $("section h1, section h2").each(function(){
-    $("nav ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + $(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'') + "'>" + $(this).text() + "</a></li>");
-    $(this).attr("id",$(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,''));
-    $("nav ul li:first-child a").parent().addClass("active");
-  });
   
-  $("nav ul li").on("click", "a", function(event) {
-    var position = $($(this).attr("href")).offset().top - 175;
-    $("html, body").animate({scrollTop: position}, 400);
-    $("nav ul li a").parent().removeClass("active");
-    $(this).parent().addClass("active");
-    event.preventDefault();    
-  });
-  
+  nav_tag_link('android');
+  nav_tag_link('ios');
+  nav_tag_link('windows');
+  document.getElementById("ios").style.display="none";
+  document.getElementById("windows").style.display="none";
   sectionHeight();
   
   $('img').load(sectionHeight);
@@ -51,3 +43,39 @@ fixScale = function(doc) {
     doc[addEvent](type, fix, true);
   }
 };
+
+function nav_tag_link(type){
+$("#"+type+" section h1,#"+type+" section h2").each(function(){
+      $("#"+type+" nav ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + $(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'') + "'>" + $(this).text() + "</a></li>");
+      $(this).attr("id",$(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,''));
+      $("#"+type+" nav ul li:first-child a").parent().addClass("active");
+  });
+     
+      $("#"+type+" nav ul li").on("click", "a", function(event) {
+    var position = $($(this).attr("href")).offset().top - 175;
+    $("html, body").animate({scrollTop: position}, 400);
+    $("#"+type+" nav ul li a").parent().removeClass("active");
+    $(this).parent().addClass("active");
+    event.preventDefault();    
+  });
+}
+
+  function display_section(type){
+     document.getElementById(type).style.display="block";
+     if(type=='ios')
+     {
+      document.getElementById('android').style.display="none";
+      document.getElementById('windows').style.display="none";
+     }
+     else
+     if (type=='android') 
+      {
+        document.getElementById('ios').style.display="none";
+        document.getElementById('windows').style.display="none";
+      }
+    else
+    {
+      document.getElementById('ios').style.display="none";
+      document.getElementById('android').style.display="none";
+    }
+  }
