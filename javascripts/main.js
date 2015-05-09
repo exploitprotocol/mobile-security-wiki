@@ -57,35 +57,29 @@ $("#"+type+" section h1,#"+type+" section h2").each(function(){
 
   function display_section(type){
      document.getElementById(type).style.display="block";
+     $("#android nav ul").text("");
+     $("#windows nav ul").text("");
+     $("#ios nav ul").text("");
+     document.getElementById('Contribute_section_android').innerHTML="";
+    document.getElementById('Contribute_section_windows').innerHTML="";
+    document.getElementById('Contribute_section_ios').innerHTML="";   
      if(type=='ios')
      {
       nav_tag_link('ios');
-      $("#android nav ul").text("");
-      $("#windows nav ul").text("");
       document.getElementById('android').style.display="none";
-      document.getElementById('Contribute_section_android').innerHTML="";
       document.getElementById('windows').style.display="none";
-      document.getElementById('Contribute_section_windows').innerHTML="";
      }
      else
      if (type=='android') 
       {
         nav_tag_link('android');
-      $("#windows nav ul").text("");
-      $("#ios nav ul").text("");
         document.getElementById('ios').style.display="none";
         document.getElementById('windows').style.display="none";
-        document.getElementById('Contribute_section_ios').innerHTML="";
-        document.getElementById('Contribute_section_windows').innerHTML="";
       }
     else
     {
       nav_tag_link('windows');
-      $("#android nav ul").text("");
-      $("#ios nav ul").text("");
       document.getElementById('ios').style.display="none";
-      document.getElementById('Contribute_section_android').innerHTML="";
-      document.getElementById('Contribute_section_ios').innerHTML="";
       document.getElementById('android').style.display="none";
     }
     var contribute="<a id='contribute' class='anchor' href='#contribute' aria-hidden='true'></a>\
