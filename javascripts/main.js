@@ -116,6 +116,7 @@ $("#"+type+" section h1,#"+type+" section h2").each(function(){
                <li><a href='https://twitter.com/h3xstream' target='_blank'>Philippe Arteau</a></li>\
                <li><a href='https://twitter.com/vbisbest' target='_blank'>Ray Kelly</a></li>\
                <li><a href='https://shankaraman.wordpress.com/' target='_blank'>Shankar Raman </a></li>\
+               <li><a href='https://twitter.com/clviper' target='_blank'>Cláudio André</a></li>\
             </ul>";
       document.getElementById('Contribute_section_'+type).innerHTML=contribute;
   }
