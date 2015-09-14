@@ -10,7 +10,7 @@
       <link rel="stylesheet" href="stylesheets/styles.css">
       <link rel="stylesheet" href="stylesheets/pygment_trac.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-      <script src="javascripts/main.js"></script>
+      <script src="javascripts/main.js?version=2"></script>
       <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
       <![endif]-->
@@ -18,6 +18,14 @@
       <link href="favicon.ico" rel="shortcut icon">
    </head>
    <body>
+   	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
       <header>
          <h1><span class="fa fa-mobile" title="Mobile Security Wiki" style="cursor:pointer;"></span> Mobile Security Wiki</h1>
          <p>One Stop for Mobile Security Resources</p>
@@ -26,20 +34,21 @@
          <span id="space_section">&nbsp;&nbsp;<a href="https://github.com/exploitprotocol/mobile-security-wiki/commits/gh-pages.atom" target="_blank" style="
     position: absolute;margin-left: -35px;   
     padding-top: 8px;
-"><img src="https://i.imgur.com/jDUfFGH.png"></a></span><a href="#contribute" class="button">Contribute</a><a href="https://manifestsecurity.com" class="button" target="_blank">A ManifestSecurity.com Initiative</a>
-         <a class="twitter-share-button" href="https://twitter.com/share" data-url="https://mobilesecuritywiki.com" data-via="exploitprotocol" data-text="Mobile Security Wiki - One Stop for Mobile Security Resources" data-count="none">Tweet</a>
+"><img src="https://i.imgur.com/jDUfFGH.png"></a></span><a href="#contribute" class="button">Contribute</a><a href="https://manifestsecurity.com" class="button" target="_blank">A ManifestSecurity.com Project</a>
+         <a class="twitter-share-button" href="https://twitter.com/share" data-url="https://mobilesecuritywiki.com" data-via="exploitprotocol" data-text="Mobile Security Wiki - One Stop for Mobile Security Resources">Tweet</a>&nbsp;<div class="fb-like" data-href="https://mobilesecuritywiki.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
       </div>
 
 
       <!-- end banner -->
       <div class="wrapper" id="android">
          <nav>
-            <ul></ul>
+            <ul>
+            </ul>
          </nav>
          <section>
             <p><span style="cursor:pointer;" title="Android" class="fa fa-android fa-3x" onclick="display_section('android')"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="cursor:pointer;" title="iOS" class="fa fa-apple fa-3x" onclick="display_section('ios')"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="cursor:pointer;" title="Windows App" class="fa fa-windows fa-3x" onclick="display_section('windows')"></span></p>
             <p>Please click on above icons to navigate between Wikis.</p>
-            <p>Please use left sidebar to navigate between sections.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Updated on: <strong>6-May-2015</strong></p>
+            <p>Please use left sidebar to navigate between sections.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Updated on: <strong>12-August-2015</strong></p>
             <a id="forensics-tools" class="anchor" href="#forensics-tools" aria-hidden="true" style="display:block"></a>
             <h2><i class="fa fa-folder"></i> Forensics Tools <a href="#forensics-tools"><span class="octicon octicon-link"></span></a></h2>
             <ul>
@@ -169,8 +178,12 @@
                <li>
                   <p><a href="https://github.com/Konloch/bytecode-viewer" target="_blank">Bytecode-Viewer</a> - A Java 8 Jar &amp; Android APK Reverse Engineering Suite (Decompiler, Editor, Debugger &amp; More)</p>
                </li>
+               <li><p><a href="http://sseblog.ec-spride.de/2014/12/codeinspect/" target="_blank">CodeInspect</a> - A Jimple-based Reverse-Engineering framework for Android and Java applications.</p></li>
                <li>
                   <p><a href="https://github.com/mariokmk/dedex" target="_blank">dedex</a> - A command line tool for disassembling Android DEX files.</p>
+               </li>
+               <li>
+                  <p><a href="http://newandroidbook.com/tools/dextra.html" target="_blank">dextra</a> - dextra utility began its life as an alternative to the AOSP's dexdump and dx --dump, both of which are rather basic, and produce copious, but unstructured output. In addition to supporting all their features, it also supports various output modes, specific class, method and field lookup, as well as determining static field values. I lated updated it to support ART (which is also one of the reasons why the tool was renamed).</p>
                </li>
                <li>
                   <p><a href="https://code.google.com/p/dex2jar/" target="_blank">Dex2Jar</a> - Tools to work with android .dex and java .class files</p>
@@ -290,11 +303,12 @@
                   </p>
                </li>
                <li>
-                  <p><a href="https://www.nowsecure.com/apptesting/community/#viaprotect" target="_blank">Now Secure App Testing Suite:Community Edition</a></p>
+                  <p><a href="https://www.nowsecure.com/apptesting/community/#viaprotect" target="_blank">NowSecure Lab community edition</a> - It does dynamic analysis of mobile apps (network traffic)</p>
                </li>
                <li>
-                  <p><a href="https://santoku-linux.com/">Santoku Linux</a> - Santoku Linux is a virtual machine developed by NowSecure Mobile.</p>
+                  <p><a href="https://santoku-linux.com/">Santoku Linux</a> - Santoku is an OS and can be run outside a VM as a standalone operating system.</p>
                </li>
+               <li><p><a href="http://h30499.www3.hp.com/t5/Fortify-Application-Security/Announcing-ShadowOS/ba-p/6725771#.VUzhUJOupKg" target="_blank">Shadow OS</a> -  ShadowOS is a free tool designed by Fortify on Demand to help Security and QA teams test Android applications for security vulnerabilities. It is a custom OS based off of KitKat that intercepts specific areas of the device's operation and makes testing apps for security vulnerabilites easier.</p></li>
                <li>
                   <p><a href="https://github.com/oguzhantopgul/Vezir-Project" target="_blank">Vezir Project</a> - Yet Another Linux Virtual Machine for Mobile Application Pentesting and Mobile Malware Analysis.</p>
                </li>
@@ -327,6 +341,16 @@
                <li>
                   <p><a href="http://delhi.securitycompass.com/" target="_blank">Am I Vulnerable</a> - AIV is an Android security app that notifies the user of publicly known vulnerabilities found in the installed version of apps on the device.</p>
                </li>
+            </ul>
+            <a id="application-security-framework" class="anchor" href="#application-security-framework" aria-hidden="true"></a>
+            <h2><i class="fa fa-user-secret"></i>Application Security Framework<a href="#application-security-framework"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+            	<li>
+            		<p><a href="http://www.app-ray.com/" target="_blank">AppRay</a> - App-Ray takes a look inside your apps and helps you understand what they really do. In fully automated tests, App-Ray analyzes apps and highlights vulnerabilities, data leaks, and privacy breaches.</p>
+            	</li>
+            	<li>
+            		<p><a href="https://github.com/ajinabraham/YSO-Mobile-Security-Framework" target="_blank">YSO-Mobile Security Framework</a> - Mobile Security Framework is an intelligent, all-in-one open source mobile application (Android/iOS) automated pen-testing framework capable of performing static and dynamic analysis.</p>
+            	</li>
             </ul>
             <a id="android-malwares-related" class="anchor" href="#android-malwares-related" aria-hidden="true"></a>
             <h2><i class="fa fa-warning"></i> Android Malwares Related <a href="#android-malwares-related"><span class="octicon octicon-link"></span></a></h2>
@@ -627,6 +651,13 @@
                   </tr>
                </thead>
                <tbody>
+                  <tr>
+                     <td>Is my app secure?</td>
+                     <td>Bsides Lisbon</td>
+                     <td>2015</td>
+                     <td>Cláudio André, Herman Duarte</td>
+                     <td><a href="http://www.slideshare.net/clviper/is-my-app-secure-51493019" target="_blank">Link</a></td>
+                  </tr>               	
                   <tr>
                      <td>The nightmare behind the cross platform mobile apps dream</td>
                      <td>Blackhat Asia</td>
@@ -1031,39 +1062,9 @@
                   </tr>
                </tbody>
             </table>
-            <a id="contribute" class="anchor" href="#contribute" aria-hidden="true"></a>
-            <h2><i class="fa fa-github"></i> Contribute <a href="#contribute"><span class="octicon octicon-link"></span></a></h2>
-            <p>It is awesome to see that you want to contribute in this wiki, which would directly help the community. Project/Tools which are no longer maintained are not included in this wiki. List of awesome contributors to this wiki is given below. Please follow one of the ways from below to include tool or resource in this wiki-</p>
-            <ul>
-               <li>
-                  <p>Tweet the resource to <a href="https://twitter.com/exploitprotocol" target="_blank">@exploitprotocol</a></p>
-               </li>
-               <li>
-                  <p>Shoot an email to <strong><a href="mailto:aditya@manifestsecurity.com">aditya@manifestsecurity.com</a></strong></p>
-               </li>
-               <li>
-                  <p>Create a pull request or an issue to <a href="https://github.com/exploitprotocol/android-security-wiki/tree/gh-pages" target="_blank">Android Security Wiki Repository</a> gh-pages branch. Please add content in index.html in gh-pages branch if creating an pull request.</p>
-               </li>
-            </ul>
-            <p>Please let me know if you have any suggestions</p>
-            <p>Below is the list of awesome people who contributed to this wiki.</p>
-            <ul>
-               <li><a href="https://twitter.com/c0d3xpl0it" target="_blank">Pralhad Chaskar</a></li>
-               <li><a href="http://anantshri.info" target="_blank">Anant Shrivastava</a></li>
-               <li><a href="">Michael Freeman</a></li>
-               <li><a href="">Esteban</a></li>
-               <li><a href="http://prakharbhardwaj.in/" target="_blank">Prakhar Bhardwaj</a></li>
-               <li><a href="https://www.facebook.com/thomas.blessen" target="_blank">Blessen Thomas</a></li>
-               <li><a href="https://twitter.com/hslatman" target="_blank">Herman Slatman</a></li>
-               <li><a href="http://delhi.securitycompass.com" target="_blank">Abhineet Jayaraj</a></li>
-               <li><a href="https://www.blackhat.com/eu-14/speakers/Sagi-Kedmi.html" target="_blank">Sagi Kedmi</a></li>
-               <li><a href="http://in.linkedin.com/in/ankitsrivastav9nov" target="_blank">Ankit Kumar</a></li>
-               <li><a href="http://www.parbhatpuri.com/" target="_blank">Parbhat Puri</a></li>
-               <li><a href="https://blog.fortinet.com/author/ruchna-nigam" target="_blank">Ruchna Nigam</a></li>
-               <li><a href="https://twitter.com/Abhinav_Sejpal" target="_blank">Abhinav Sejpal</a></li>
-               <li><a href="https://twitter.com/specter_labs" target="_blank">Shane Hartman</a></li>
-               <li><a href="https://twitter.com/h3xstream" target="_blank">Philippe Arteau</a></li>
-            </ul>
+            <div id="Contribute_section_android">
+            </div>
+
          </section>
       </div>
       <div class="wrapper" id="ios" >
@@ -1073,7 +1074,7 @@
          <section>
             <p><span style="cursor:pointer;" title="Android" class="fa fa-android fa-3x" onclick="display_section('android')"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="cursor:pointer;" title="iOS" class="fa fa-apple fa-3x" onclick="display_section('ios')"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="cursor:pointer;" title="Windows App" class="fa fa-windows fa-3x" onclick="display_section('windows')"></span></p>
             <p>Please click on above icons to navigate between Wikis.</p>
-            <p>Please use left sidebar to navigate between sections.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Updated on: <strong>4-May-2015</strong></p>
+            <p>Please use left sidebar to navigate between sections.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Updated on: <strong>12-August-2015</strong></p>
             <a id="disassemblers-tools" class="anchor" href="#disassemblers-tools" aria-hidden="true" style="visibility: hidden"></a>
             <h2><i class="fa fa-cogs"></i> Disassemblers Tools <a href="#disassemblers-tools"><span class="octicon octicon-link"></span></a></h2>
             <ul>
@@ -1114,7 +1115,7 @@ AppSec Labs iNalyzer is a framework for manipulating iOS applications, tampering
             <ul>
                <li><p><a href="https://github.com/BishopFox/iSpy" target="_blank">iSpy</a> - A reverse engineering framework for iOS</p></li>
                <li><p><a href="https://github.com/S3Jensen/iRET" target="_blank">iRET</a> - The iOS Reverse Engineering Toolkit is a toolkit designed to automate many of the common tasks associated with iOS penetration testing. </p></li>
-               <li><p><a href="http://www.cycript.org/" target=_blank">cycript</a> - Cycript allows developers to explore and modify running applications on either iOS or Mac OS X using a hybrid of Objective-C++ and JavaScript syntax through an interactive console that features syntax highlighting and tab completion.</p></li>
+               <li><p><a href="http://www.cycript.org/" target="_blank">cycript</a> - Cycript allows developers to explore and modify running applications on either iOS or Mac OS X using a hybrid of Objective-C++ and JavaScript syntax through an interactive console that features syntax highlighting and tab completion.</p></li>
                <li><p><a href="https://github.com/DHowett/theos/blob/master/bin/logify.pl" target="_blank">Logify</a> -  Logify takes an Objective-C header file containing a class interface and generates a Logos file hooking all methods in the given class, and for each hook logging the call of the method (with parameters) to the syslog</p></li>
                
             </ul>
@@ -1174,6 +1175,10 @@ AppSec Labs iNalyzer is a framework for manipulating iOS applications, tampering
                   </tr>
                </tbody>
             </table>
+            
+            <div id="Contribute_section_ios">
+            </div>
+
          </section>
       </div>
       
@@ -1184,9 +1189,23 @@ AppSec Labs iNalyzer is a framework for manipulating iOS applications, tampering
          <section>
             <p><span style="cursor:pointer;" title="Android" class="fa fa-android fa-3x" onclick="display_section('android')"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="cursor:pointer;" title="iOS" class="fa fa-apple fa-3x" onclick="display_section('ios')"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="cursor:pointer;" title="Windows App" class="fa fa-windows fa-3x" onclick="display_section('windows')"></span></p>
             <p>Please click on above icons to navigate between Wikis.</p>
-            <p>Please use left sidebar to navigate between sections.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Updated on: <strong>4-May-2015</strong></p>
-			<a id="windows-presentations" class="anchor" href="#windows-presentations" aria-hidden="true" style="visibility: hidden"></a>
-            <h2><i class="fa fa-windows"></i> Windows Presentations <a href="#windows-presentations"><span class="octicon octicon-link"></span></a></h2>
+            <p>Please use left sidebar to navigate between sections.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Updated on: <strong>12-August-2015</strong></p>
+            <a id="windows-tools" class="anchor" href="#windows-tools" aria-hidden="true" style="visibility: hidden"></a>
+            <h2><i class="fa fa-windows"></i> Windows Tools <a href="#windows-tools"><span class="octicon octicon-link"></span></a></h2>
+            <ul>
+               <li><p><a href="https://github.com/sensepost/XAPSpy" target="_blank">XAPSpy</a> - runtime analysis of windows phone 7 applications</p></li>
+               <li><p><a href="https://xapspyanalysis.codeplex.com/" target="_blank">XapSpyAnalysis</a> - XapSpyAnalysis is an extension to Behrang Fouladis excellent XapSpy tool. XapSpy enables you to debug method calls and variables for Windows Phone 7 XAP packages on the device emulator.</p></li>
+               <li><p><a href="http://ilspy.net/" target="_blank">ILSpy</a> - ILSpy is the open-source .NET assembly browser and decompiler.</p></li>
+               <li><p><a href="https://github.com/andreycha/tangerine" target="_blank">Tangerine</a> - Tool for inspecting Windows Phone applications</p></li>
+               <li><p><a href="http://xamlspy.com/" target="_blank">xaml spy</a> - XAML Spy provides a real-time view of your app's state. Examine and modify the properties of any element on-the-fly and see the changes reflected immediately in the running app.</p></li>
+               <li><p><a href="http://sourceforge.net/projects/dile/" target="_blank">Dotnet IL Editor</a> - Dotnet IL Editor (DILE) allows disassembling and debugging .NET 1.0/1.1/2.0/3.0/3.5/4.0 applications without source code or .pdb files. It can debug even itself or the assemblies of the .NET Framework on IL level.</p></li>
+               <li><p><a href="http://reflexil.net/" target="_blank">Reflexil</a> - Reflexil is an assembly editor and runs as a plug-in for Red Gate's Reflector, ILSpy and Telerik's JustDecompile. Reflexil is using Mono.Cecil, written by Jb Evain and is able to manipulate IL code and save the modified assemblies to disk. Reflexil also supports C#/VB.NET code injection.</p></li>
+               <li><p><a href="https://wp8webserver.codeplex.com/" target="_blank">WP8 Native Access Webserver</a> - Want to access files and registry data on a running WP8 device from your PC? This is the tool for that.</p></li>
+               <li><p><a href="http://www.microsoft.com/en-in/download/details.aspx?id=11910" target="_blank">Binscope Binary Analyzer</a> - BinScope is a Microsoft verification tool that analyzes binaries on a project-wide level to ensure that they have been built in compliance with Microsoft’s Security Development Lifecycle (SDL) requirements and recommendations.</p></li>
+               <li><p><a href="https://github.com/gebucholz/Phate" target="_blank">Phate</a> - A network server and library for exploring Windows Phone 8</p></li>
+            </ul>
+            <a id="windows-presentations" class="anchor" href="#windows-presentations" aria-hidden="true" style="visibility: hidden"></a>
+           <h2><i class="fa fa-video-camera"></i> Windows Presentations <a href="#windows-presentations"><span class="octicon octicon-link"></span></a></h2>
             <table>
                <thead>
                   <tr>
@@ -1200,7 +1219,7 @@ AppSec Labs iNalyzer is a framework for manipulating iOS applications, tampering
                <tbody>
                   <tr>
                      <td>Inspection of Windows Phone applications</td>
-                     <td>BlackHat Abu Dhabi</td>
+                    <td>BlackHat Abu Dhabi</td>
                      <td>2012</td>
                      <td>Dmitriy Evdokimov, Andrey Chasovskikh</td>
                      <td><a href="https://media.blackhat.com/ad-12/Evdokimov/bh-ad-12-inspection-of-windows-evdokimov-slides.pdf" target="_blank">Link</a></td>
@@ -1217,32 +1236,19 @@ AppSec Labs iNalyzer is a framework for manipulating iOS applications, tampering
                      <td>Hack in Paris</td>
                      <td>2013</td>
                      <td>Andrey Chasovskikh, Dmitry Evdokimov</td>
-                     <td><a href="http://erpscan.com/wp-content/uploads/2013/06/Windows-Phone-8-application-security-slides.pdf" target="_blank">Link</a>
-					 <a href="https://www.youtube.com/watch?v=T--lbn2oGJc" target="_blank">Video</a></td>
+                     <td><a href="http://erpscan.com/wp-content/uploads/2013/06/Windows-Phone-8-application-security-slides.pdf" target="_blank">Link</a><a href="https://www.youtube.com/watch?v=T--lbn2oGJc" target="_blank">Video</a></td>
                   </tr>
 				</tbody>
 			</table>
-			<a id="windows-tools" class="anchor" href="#windows-tools" aria-hidden="true" style="visibility: hidden"></a>
-            <h2><i class="fa fa-windows"></i> Windows Tools <a href="#windows-tools"><span class="octicon octicon-link"></span></a></h2>
-            <ul>
-               <li><p><a href="https://github.com/sensepost/XAPSpy" target="_blank">XAPSpy</a> - runtime analysis of windows phone 7 applications</p></li>
-               <li><p><a href="https://xapspyanalysis.codeplex.com/" target="_blank">XapSpyAnalysis</a> - XapSpyAnalysis is an extension to Behrang Fouladis excellent XapSpy tool. XapSpy enables you to debug method calls and variables for Windows Phone 7 XAP packages on the device emulator.</p></li>
-               <li><p><a href="http://ilspy.net/" target="_blank">ILSpy</a> - ILSpy is the open-source .NET assembly browser and decompiler.</p></li>
-               <li><p><a href="https://github.com/andreycha/tangerine" target="_blank">Tangerine</a> - Tool for inspecting Windows Phone applications</p></li>
-               <li><p><a href="http://xamlspy.com/" target="_blank">xaml spy</a> - XAML Spy provides a real-time view of your app's state. Examine and modify the properties of any element on-the-fly and see the changes reflected immediately in the running app.</p></li>
-               <li><p><a href="http://sourceforge.net/projects/dile/" target="_blank">Dotnet IL Editor</a> - Dotnet IL Editor (DILE) allows disassembling and debugging .NET 1.0/1.1/2.0/3.0/3.5/4.0 applications without source code or .pdb files. It can debug even itself or the assemblies of the .NET Framework on IL level.</p></li>
-               <li><p><a href="http://reflexil.net/" target="_blank">Reflexil</a> - Reflexil is an assembly editor and runs as a plug-in for Red Gate's Reflector, ILSpy and Telerik's JustDecompile. Reflexil is using Mono.Cecil, written by Jb Evain and is able to manipulate IL code and save the modified assemblies to disk. Reflexil also supports C#/VB.NET code injection.</p></li>
-               <li><p><a href="https://wp8webserver.codeplex.com/" target="_blank">WP8 Native Access Webserver</a> - Want to access files and registry data on a running WP8 device from your PC? This is the tool for that.</p></li>
-               <li><p><a href="http://www.microsoft.com/en-in/download/details.aspx?id=11910" target="_blank">Binscope Binary Analyzer</a> - BinScope is a Microsoft verification tool that analyzes binaries on a project-wide level to ensure that they have been built in compliance with Microsoft’s Security Development Lifecycle (SDL) requirements and recommendations.</p></li>
-               <li><p><a href="https://github.com/gebucholz/Phate" target="_blank">Phate</a> - A network server and library for exploring Windows Phone 8</p></li>
-            </ul>
-			<a id="windows-whitepapers" class="anchor" href="#windows-whitepapers" aria-hidden="true" style="visibility: hidden"></a>
-            <h2><i class="fa fa-windows"></i> Windows Whitepapers <a href="#windows-whitepapers"><span class="octicon octicon-link"></span></a></h2>
+		<a id="windows-whitepapers" class="anchor" href="#windows-whitepapers" aria-hidden="true" style="visibility: hidden"></a>
+            <h2><i class="fa fa-newspaper-o"></i> Windows Whitepapers <a href="#windows-whitepapers"><span class="octicon octicon-link"></span></a></h2>
             <ul>
 				<li><p><a href="https://labs.mwrinfosecurity.com/system/assets/651/original/mwri_wp8_appsec-whitepaper-syscan_2014-03-30.pdf" target="_blank">Windows Phone 8 Application Security Whitepaper</a> - March 2014</p></li>
 				<li><p><a href="http://i.nokia.com/blob/view/-/3499852/data/1/-/Security.pdf" target="_blank">Windows Phone 8 Security Guide</a> - September 2013</p></li>
 				<li><p><a href="http://download.microsoft.com/download/B/9/A/B9A00269-28D5-4ACA-9E8E-E2E722B35A7D/Windows-Phone-8-1-Security-Overview.pdf" target="_blank">Windows Phone 8.1 Security Overview</a> - April 2014</p></li>
             </ul>
+            <div id="Contribute_section_windows">
+            </div>
          </section>
       </div>
       
