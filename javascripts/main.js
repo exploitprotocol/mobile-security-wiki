@@ -97,7 +97,7 @@ $("#"+type+" section h1,#"+type+" section h2").each(function(){
                </li>\
             </ul>\
             <p>Please let me know if you have any suggestions</p>\
-            <p>Below is the list of awesome people who contributed to this wiki. I would like to specially thanks <a href='https://twitter.com/h3xstream' target='_blank'>Philippe Arteau</a>, <a href='https://codingeass.github.io/' target='_blank'>Amandeep Gupta</a> and <li><a href='https://twitter.com/hslatman' target='_blank'>Herman Slatman</a></li>\ who contributed a lot to this website. </p>\
+            <p>Below is the list of awesome people who contributed to this wiki. I would like to specially thanks <a href='https://twitter.com/h3xstream' target='_blank'>Philippe Arteau</a>, <a href='https://codingeass.github.io/' target='_blank'>Amandeep Gupta</a> and <a href='https://twitter.com/hslatman' target='_blank'>Herman Slatman</a> who contributed a lot to this website. </p>\
             <ul>\
                <li><a href='https://twitter.com/c0d3xpl0it' target='_blank'>Pralhad Chaskar</a></li>\
                <li><a href='http://anantshri.info' target='_blank'>Anant Shrivastava</a></li>\
