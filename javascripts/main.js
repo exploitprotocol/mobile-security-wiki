@@ -15,7 +15,7 @@ $(window).resize(sectionHeight);
 $(document).ready(function(){
   display_section('android');
   sectionHeight();
-  
+
   $('img').load(sectionHeight);
 });
 
@@ -51,7 +51,7 @@ $("#"+type+" section h1,#"+type+" section h2").each(function(){
     $("html, body").animate({scrollTop: position}, 400);
     $("#"+type+" nav ul li a").parent().removeClass("active");
     $(this).parent().addClass("active");
-    event.preventDefault();    
+    event.preventDefault();
   });
 }
 
@@ -62,7 +62,7 @@ $("#"+type+" section h1,#"+type+" section h2").each(function(){
      $("#ios nav ul").text("");
      document.getElementById('Contribute_section_android').innerHTML="";
     document.getElementById('Contribute_section_windows').innerHTML="";
-    document.getElementById('Contribute_section_ios').innerHTML="";   
+    document.getElementById('Contribute_section_ios').innerHTML="";
      if(type=='ios')
      {
       nav_tag_link('ios');
@@ -70,7 +70,7 @@ $("#"+type+" section h1,#"+type+" section h2").each(function(){
       document.getElementById('windows').style.display="none";
      }
      else
-     if (type=='android') 
+     if (type=='android')
       {
         nav_tag_link('android');
         document.getElementById('ios').style.display="none";
@@ -97,7 +97,7 @@ $("#"+type+" section h1,#"+type+" section h2").each(function(){
                </li>\
             </ul>\
             <p>Please let me know if you have any suggestions</p>\
-            <p>Below is the list of awesome people who contributed to this wiki.I would like to specially thanks <a href='https://twitter.com/h3xstream' target='_blank'>Philippe Arteau</a> and <a href='https://codingeass.github.io/' target='_blank'>Amandeep Gupta</a> who contributed a lot for UI of this website.</p>\
+            <p>Below is the list of awesome people who contributed to this wiki. I would like to specially thanks <a href='https://twitter.com/h3xstream' target='_blank'>Philippe Arteau</a>, <a href='https://codingeass.github.io/' target='_blank'>Amandeep Gupta</a> and <li><a href='https://twitter.com/hslatman' target='_blank'>Herman Slatman</a></li>\ who contributed a lot to this website. </p>\
             <ul>\
                <li><a href='https://twitter.com/c0d3xpl0it' target='_blank'>Pralhad Chaskar</a></li>\
                <li><a href='http://anantshri.info' target='_blank'>Anant Shrivastava</a></li>\
