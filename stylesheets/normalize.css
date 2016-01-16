@@ -320,7 +320,7 @@ fieldset {
 
 /*
  * 1. Corrects color not being inherited in IE6/7/8/9
- * 2. Corrects text not wrapping in FF3 
+ * 2. Corrects text not wrapping in FF3
  * 3. Corrects alignment displayed oddly in IE6/7
  */
 legend {
@@ -456,4 +456,33 @@ textarea {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+#search-show-btn
+{
+    margin: 0 15px;
+    background-color: #29DCB2;
+    color: white;
+    border: none;
+    border-radius: 10%;
+    transition: .2s ease-out;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+#search-show-btn:hover
+{
+	background-color: white;
+	color: #235796;
+}
+
+.search-button
+{
+    margin-right: 5px;
+    margin-top: 5px;
+    background-color: #235796;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10%;
 }
