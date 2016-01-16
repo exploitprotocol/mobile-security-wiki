@@ -1,20 +1,20 @@
-/* Cool Javascript Find on this Page 
+/* Cool Javascript Find on this Page
 Ver 5.3
 Written by Jeff Baker on September, 8, 2007.
-Copyright 2014 by Jeff Baker - 
+Copyright 2014 by Jeff Baker -
 Version 5.0 created 7/16/2014
 Updated 5/15/2015 ver 5.3
 http://www.seabreezecomputers.com/tips/find.htm
 Paste the following javascript call in your HTML web page where
 you want a button called "Find on this Page...":
 
-<script type="text/javascript" language="JavaScript" 
+<script type="text/javascript" language="JavaScript"
 src="find5.js">
 </script>
 
 When you click on the button a floating DIV will pop up
 that will have a text box for users to enter in the text they
-want to find on the page.  
+want to find on the page.
 
 WARNING: If you want to place a second "Find on this page..."
 button somewhere on the same page then use the code below for
@@ -23,13 +23,13 @@ display the text that users type in and it will not find
 text correctly because there will be two different text input
 boxes with the same name:
 
-<input type="button" value="Find on this page..." 
+<input type="button" value="Find on this page..."
 onclick="show();">
-	
+
 */
 
 /**** Compressed****/
-var find_window_background="white";var find_window_border="#29DCB2";var find_text_color="#29DCB2";var find_title_color="white";var find_window_width=245;var find_window_height=85;var find_root_node=null;var drag={mousex:0,mousey:0,tempx:'',tempy:'',isdrag:false,drag_obj:null,drag_obj_x:0,drag_obj_y:0};var find_timer=0;var highlights=[];var find_pointer=-1;var find_text='';var found_highlight_rule=0;var found_selected_rule=0;document.onmousedown=MouseDown;document.onmousemove=MouseMove;document.onmouseup=MouseUp;document.ontouchstart=MouseDown;document.ontouchmove=MouseMove;document.ontouchend=MouseUp;function highlight(word,node)
+var find_window_background="white";var find_window_border="#235796";var find_text_color="#235796";var find_title_color="white";var find_window_width=245;var find_window_height=85;var find_root_node=null;var drag={mousex:0,mousey:0,tempx:'',tempy:'',isdrag:false,drag_obj:null,drag_obj_x:0,drag_obj_y:0};var find_timer=0;var highlights=[];var find_pointer=-1;var find_text='';var found_highlight_rule=0;var found_selected_rule=0;document.onmousedown=MouseDown;document.onmousemove=MouseMove;document.onmouseup=MouseUp;document.ontouchstart=MouseDown;document.ontouchmove=MouseMove;document.ontouchend=MouseUp;function highlight(word,node)
 {if(!node)
 node=document.body;var re=new RegExp(word,"i");for(node=node.firstChild;node;node=node.nextSibling)
 {if(node.nodeType==3)
