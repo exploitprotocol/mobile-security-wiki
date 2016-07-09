@@ -118,6 +118,7 @@ $("#"+type+" section h1,#"+type+" section h2").each(function(){
                <li><a href='https://shankaraman.wordpress.com/' target='_blank'>Shankar Raman </a></li>\
                <li><a href='https://twitter.com/clviper' target='_blank'>Cláudio André</a></li>\
 		<li><a href='https://twitter.com/yog3shsharma' target='_blank'>Yogesh Sharma</a></li>\
+		<li><a href='https://twitter.com/akankshabana' target='_blank'>Akanksha Bana</a></li>\
             </ul>";
       document.getElementById('Contribute_section_'+type).innerHTML=contribute;
   }
